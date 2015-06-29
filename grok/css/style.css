@@ -126,7 +126,9 @@ p {
       border: 5px solid #000000;
       text-transform: uppercase;
       font-size: 0.9em;
-      transform: rotate(45deg); } }
+      transform: rotate(45deg);
+      padding: 0;
+      text-align: center; } }
 
 .fixed_header_menu h5 {
   transform: rotate(-45deg); }
