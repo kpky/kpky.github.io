@@ -1,10 +1,6 @@
-@-ms-viewport{
-  width: device-width;
-}
-
 body {
   background: #ffffff;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Arial", "sans-serif"; }
+  font-family: "Telex", sans-serif; }
 
 h3, h4, h5, h6 {
   font-weight: 700;
