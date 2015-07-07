@@ -1,0 +1,1138 @@
+/*
+
+blue links - 1459cc
+teal links - 2ba7af
+medium teal - b1dee2
+dark teal - 09282f
+very dark teal - 082329
+light green body - e5f5ef
+orange accents - d65d00
+gray borders- c7d5d0
+
+/*border: 5px solid #c7d5d0;*/
+
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+body{
+	background: #e5f5ef;
+	font-family: "Montserrat" "Helvetica" "sans-serif";
+	color: #082329;
+	margin: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Fugaz One' cursive;
+
+}
+
+.wrapper{
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+.search_programs{
+	display: none;
+}
+
+
+.search_programs_m{
+	display: block;
+	font-family: 'Fugaz One', cursive;
+	padding: 0;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.search_programs_m form{
+	display: block;
+	width: 100%;
+}
+
+.search_programs_m label{
+	display: inline-block;
+	width: 30%;
+	font-size: 0.7em;
+	text-align: right;
+}
+
+
+.search_programs_m input{
+	display: inline-block;
+	width: 35%;
+	padding: 1%;
+	margin-right: 1%;
+	margin-left: 1%;
+
+}
+
+
+.search_programs_m button{
+	display: inline-block;
+	width: 13%;
+	font-family: 'Fugaz One' cursive;
+	background: #c7d5d0;
+	border-radius: 3px;
+	padding: 1%;
+	border: none;
+}
+
+.logo img{
+
+	display: block;
+	clear: both;
+	width: 70%;
+	margin: 1% auto;
+
+}
+
+.logo a{
+	margin: 0;
+}
+
+.social_media{
+	margin: 0 auto;
+	width: 17%;
+
+
+}
+
+.facebook{ 
+	display: inline-block;
+	float: left;
+	width: 49%;
+
+}
+
+.twitter{
+	width: 50%;
+
+}	
+
+.donate{
+	display: none;
+}
+
+.main_navigation{
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.main_navigation br{
+	display: none;
+}
+
+.main_navigation ul{
+	width: 100%;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.main_navigation li{
+	display: inline-block;
+	width: 100%;
+	padding: 0.5%;
+	background: #b1dee2;
+	font-size: 1.3em;
+	font-family: 'Fugaz One' cursive;
+	font-weight: 700;
+	border-bottom: 2px solid #efefef;
+
+}
+
+.main_navigation a{
+	text-decoration: none;
+	color: #09282f;
+
+}
+
+.main_navigation a:hover{
+	color: #2ba7af;
+}
+
+
+.boy_train, .hands{
+	display: block;
+	width: 50%;
+	float: left;
+
+}	
+
+.boy_train img, .hands img{
+	width: 100%;
+	margin-bottom: 2%;
+
+}
+
+.donate_title h4{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 2%;
+	clear: both;
+}
+
+.volunteer_button img, .donate_button img{
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.donate_content{
+	margin: 1% 3%;
+}
+
+.donate_content p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.donate_content span{
+	font-family: 'Fugaz One' cursive;
+	font-size: 1.3em;
+}
+
+.bottom_statement h4{
+	margin: 0;
+	padding: 3%;
+	text-align: left;
+	border-top: 5px solid #c7d5d0;
+	border-bottom: 5px solid #c7d5d0;
+}
+
+.site_footer{
+	background: #082329;
+	width: 100%;
+}
+
+.secondary_nav, .disclaimer_copyright, .address{
+	padding-left: 0;
+	list-style: none;
+	margin: 3%;
+	width: 22%;
+	text-align: center;
+	
+}
+
+.site_footer ul{
+	float: left;
+}
+
+.address li{
+	color: #e5f5ef;
+}
+
+.secondary_nav li, .disclaimer_copyright li, .address li{
+	font-size: 0.5em; 
+	text-align: left;
+
+}
+
+.secondary_nav a, .disclaimer_copyright a, .address a{
+	text-decoration: none;
+	color: #2ba7af;
+
+}
+
+@media screen and (min-width: 440px){
+
+.search_programs_m label{
+
+	width: 32%;
+	font-size: 0.8em;
+}
+
+}
+/*Begin Tablet Media Query for Donate Page*/
+
+@media screen and (min-width: 680px){
+
+.logo img{
+	width: 50%;
+
+}
+
+.social_media{
+	width: 13%;
+}
+
+.main_navigation{
+	background: #b1dee2;
+
+}
+
+.main_navigation li{
+	background: none;
+	font-size: 1.4em;
+	display: inline-block;
+	width: 30%;
+	border-bottom: none;
+}
+
+.search_programs_m label{
+
+	width: 32%;
+	font-size: 0.8em;
+}
+
+}
+
+ /*End Tablet Media Query for Donate Page*/
+/*Begin Desktop Design for Donate Page*/
+
+@media screen and (min-width: 960px){
+
+header{
+	background: #b1dee2;
+	background-image: url(../img/hands.png);
+	background-repeat: no-repeat;
+	background-size: 54%;
+	background-position: left;
+
+
+}
+
+.social_media{
+	margin-right: 3%;
+
+}
+
+
+.logo{
+	width: 41%;
+	float: right;
+	padding-right: 2%;
+	
+}
+
+.logo img{
+	width: 100%;
+	margin: 1%;
+
+}
+
+.facebook{
+	width: 50%;
+
+
+}
+
+.twitter{
+	width: 50%;
+
+}
+
+.main_body_donate{
+	float: left;
+	width: 78%;
+	border-right: 5px solid #c7d5d0;
+}
+
+.main_navigation{
+	display: block;
+	float: right;
+	border: none;
+	margin-right: 2%;
+	margin-left: 0;
+}
+
+.main_navigation ul{
+	border: none;
+}
+
+.main_navigation br{
+	display: block;
+}
+
+.main_navigation li{
+	display: block;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	font-size: 2em;
+	text-align: left;
+	background: #e5f5ef;
+}
+
+.main_navigation a:hover{
+	color: #1459cc;
+
+}
+
+.main_navigation ul{
+	padding-left: 0;
+}
+
+.boy_train img{
+	width: 100%;
+	float: left;
+	margin-bottom: 0;
+}
+
+.hands img{
+	width: 100%;
+	float: left;
+	margin-bottom: 0;
+
+}
+
+.donate_title h4{
+	background: #b1dee2;
+	clear: both;
+	text-align: center;
+	padding-left: 2%;
+	margin: 0;
+	padding: 1%;
+	font-size: 1.1em;
+	border-top: 5px solid #c7d5d0; 
+	border-bottom: 5px solid #c7d5d0;
+}
+
+.volunteer_button img{
+	width: 50%;
+	float: left;
+	
+}
+
+.donate_button img{
+	width: 50%;
+	float: left;
+}
+
+.donate_content{
+	float: left;
+	width: 97%;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+.bottom_statement h4{
+	clear: both;
+	background: #b1dee2;
+	width: 94%;
+	font-size: 1.2em;
+	text-align: left;
+	margin-left: 0;
+	margin-bottom: 0;
+	border-top: 5px solid #c7d5d0; 
+	border-bottom: 5px solid #c7d5d0;
+}
+
+.main_navigation a{
+	text-decoration: underline;
+}
+
+.main_navigation a:hover{
+	color: #1459cc;
+
+}
+
+.address ul{
+	width: 33.333%;
+	
+}
+.address li{
+	color: #e5f5ef;
+	text-align: left;
+
+}	
+
+.disclaimer_copyright{
+	width: 27%;
+}
+
+.disclaimer_copyright li{
+	
+	display: inline-block;
+	padding: 0 2%;
+	margin-left: 0;
+
+}
+
+.secondary_nav ul{
+	width: 46.333;
+	margin-right: 0;
+	
+}
+
+.secondary_nav li{
+	text-align: right;
+}
+
+.secondary_nav a{
+	color: #2ba7af;
+}
+
+} /*End Desktop Media Query 960 for Donate Page*/
+
+/*Begin Mobile Design for Homepage*/
+
+.main_navigation br{
+	display: none;
+}
+
+
+.featured_box img{
+	display: block;
+	width: 100%;
+}
+
+.featured_box p{
+	font-size: 0.9em;
+	margin: 0% 0% 4% 3%;
+	font-weight: 700;
+
+}
+
+.homepage_donation_button img{
+	display: block;
+	width: 100%;
+}
+
+.homepage_title{
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.about_video iframe{
+
+	display: block;
+	margin: 2% auto;
+}
+
+.homepage_facts{
+	clear: both;
+	background: #b1dee2;
+	font-family: 'Fugaz One' cursive;
+	font-size: 0.9em;
+	padding: 3% 4% 4% 4%;
+	line-height: 1.5;
+
+}
+
+.homepage_facts p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.homepage_facts span{
+	font-size: 1.5em;
+	color: #2ba7af;
+}
+
+.search_programs_m{
+	font-family: 'Fugaz One', cursive;
+	padding: 4%;
+}
+
+.resources_container{
+	background: #09282f;
+}
+
+.resources_container h3{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	color: #e5f5ef;
+}
+
+.resources_container ul{
+	padding-left: 3%;
+	padding-bottom: 3%;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.resources_container li{
+	font-size: 0.7em;
+}
+
+.resources_container a{
+	color: #2ba7af;
+
+}
+
+/*End Mobile Design Homepage
+
+Begin Tablet Homepage Media Query
+*/
+
+@media screen and (min-width: 680px){
+
+.homepage_donation_button{
+	width: 45%;
+	float: left;
+	margin-left: 3%;
+	margin-top: 1%;
+	margin-bottom: 2%;
+
+}
+
+.homepage_donation_button img{
+	width: 100%;
+}	
+
+.about_video{
+	width: 50%;
+	float: left;
+	margin-bottom: 1%;
+}
+
+.resources_container{
+	text-align: center;
+
+}	
+	
+
+.resources_list li{
+	display: inline-block;
+	text-decoration: underline;
+	padding: 1% 2%;
+
+}
+
+.search_programs_m{
+	clear: both;
+	width: 92%;
+	margin: 0 auto;
+	background: #e5f5ef;
+}
+
+} /*End Tablet Query Homepage*/
+
+/*Begin Desktop Query Homepage*/
+
+@media screen and (min-width: 960px){
+
+.main_body{
+	float: left;
+	width: 78%;
+}	
+
+.social_media{
+	width: 6%;
+	padding: 0;
+}
+
+.main_navigation{
+	background: #e5f5ef;
+	margin-top: 2%;
+}
+
+.main_navigation br{
+	display: block;
+}	
+
+.main_navigation a:hover{
+	color: #1459cc;
+}
+
+.homepage_featured_container{
+	position: relative;
+	
+}
+
+.featured_box img{
+	width: 60%;
+	padding: 0;
+	margin: 0;
+	float: right;
+}
+
+.featured_box{
+	background-color: #09282f;
+	background-image: url( ../img/accent_triangle2_long.png );
+	background-repeat: no-repeat;
+	background-size: 40% auto;
+
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	float: left;
+	
+	position: relative;
+}
+
+.homepage_donation_button{
+	width: 47%;
+	margin: 3%;
+	float: right;
+}
+
+.about_video{
+
+ 	width: 47%;
+	float: right;
+	margin-top: 3%;
+}
+
+.featured_box p{
+	display: block;
+	width: 20%;
+	position: absolute;
+	left: 40%;
+	top: 20px;
+	font-size: 0.8em;
+	padding: 2%;
+}
+
+.homepage_title{
+	position: absolute;
+	left: 2%;
+	bottom: 0;
+	font-size: 2.7em;
+	color: #e5f5ef;
+}
+
+.homepage_facts{
+	font-size: 1.1em;
+	border-bottom: 5px solid #c7d5d0;
+	background: #e5f5ef;
+	
+}
+
+.homepage_facts p{ 
+	font-family: "Montserrat" "Helvetica" "sans-serif";
+	
+
+}
+
+.resources_container{
+	clear: both;
+}
+
+
+.resources_list li{
+	text-align: left;
+}
+
+
+} /*End Desktop Media Query Homepage*/
+
+/*Begin Mobile Programs Page*/
+
+
+.flattop_image_container img, .cowboy_image_container img{
+	width: 50%;
+	float: left;
+	margin-bottom: 2%;
+}
+
+.programs_title p, .what_we_teach li, .local_programs p{
+	margin-left: 3%;
+	font-size: 0.9em;
+	font-weight: 700;
+}
+
+.what_we_teach h3, .local_programs h3{
+	text-align: center;
+	font-size: 1.3em;
+	margin: 0;
+	padding-top: 2%;
+}
+
+.what_we_teach ul{
+	margin-top: 2%;
+	padding-left: 3%;
+}
+
+.programs_list{
+	list-style: none;
+	font-size: 0.8em;
+	padding-left: 3%;
+	padding-bottom: 1%;
+	margin-bottom: 0;
+
+}
+
+.programs_list a{
+	color: #1459cc;
+}
+
+.local_programs{
+	background: #b1dee2;
+	border-top: 5px solid #c7d5d0;
+	padding-bottom: 2%;
+}
+
+.local_programs p{
+	font-family: 'Fugaz One' cursive;
+	margin-left: 3%;
+}
+
+/*End Mobile Design Programs Page
+Begin Tablet Media Query Programs Page*/
+
+@media screen and (min-width: 680px){
+
+.programs_list{
+	text-align: center;
+
+}
+
+.programs_list li{
+	display: inline-block;
+	padding: 1%;
+	font-size: 1em;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+.programs_title p, .what_we_teach li, .local_programs p{
+	margin-left: 3%;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+}
+
+/*End Tablet Query Programs Page
+Begin Desktop Query Programs Page*/
+
+@media screen and (min-width: 960px){
+
+.programs_title{
+	background: #09282f; 
+	float: left;
+	width: 100%;
+}
+
+.programs_title p{
+	color: #e5f5ef;
+	line-height: 1.5;
+	padding: 1%;
+	width: 90%;
+	margin-left: 3%;
+	font-size: 0.9em;
+	font-weight: 700;
+	text-align: left;
+}
+
+.programs_title span{
+	font-family: 'Fugaz One' cursive; 
+	font-size: 1.5em;
+	color: #2ba7af;
+
+}
+
+.flattop_image_container img, .cowboy_image_container img{
+	width: 50%;
+	float: left;
+}
+
+.site_footer{
+	clear: both;
+}
+
+.what_we_teach li, .local_programs p{
+	width: 80%;
+	margin-left: 3%;
+	font-size: 0.9em;
+	font-weight: 700;
+	text-align: left;
+}
+
+.main_body_programs{
+	float: left;
+	width: 78%;
+	background: #b1dee2;
+	border-right: 5px solid #c7d5d0;
+
+}
+
+.what_we_teach h3, .local_programs h3{
+	clear: both;
+	padding-top: 2%;
+}
+
+.what_we_teach, .local_programs{
+	width: 50%;
+	float: left;
+	padding-top: 1%;
+}
+
+.topics_list{
+	padding-top: 2%;
+	line-height: 1.5;
+}
+
+.programs_list li{
+	display: block;
+	text-align: left;
+	padding: 0;
+}
+
+.local_programs{
+	border: none;
+	margin-bottom: 1%;
+}
+
+.local_programs p{
+	font-family: 'Montserrat', 'Helvetica', 'sans-serif';
+}
+
+} /*End Desktop Query Programs Page 
+Begin Mobile Stories Page*/
+
+
+.nathan_photo img, .sidney_photo img, .tavis_photo img{
+	display: block;
+	width: 100%;
+}
+
+.success_stories{
+	background: #09282f;
+}
+
+.success_stories p{
+	font-family: 'Fugaz One' cursive;
+	font-size: 1.2em;
+	margin: 0 3% 0 3%;
+	color: #e5f5ef;
+	padding: 3%;
+	text-align: center;
+}
+
+.stories_container h1{
+	text-decoration: none;
+	margin-top: 0;
+	margin-bottom: 2%;
+	text-align: center;
+	
+}
+
+.nathan_content p, .sidney_content p, .tavis_content p{
+	font-size: 0.9em;
+	font-weight: 700;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+.stories_fact p{
+	background: #b1dee2;
+	font-family: 'Fugaz One' cursive;
+	font-size: 1.3em;
+	text-align: center;
+	margin-bottom: 0;
+	padding: 1%;
+
+}
+
+.sidney_content, .tavis_content{
+	border-top: 5px solid #c7d5d0; 
+	margin-top: 2%;
+
+}	
+
+.tavis_content{
+	border-bottom: 5px solid #c7d5d0;
+	padding-bottom: 0;
+}
+
+/*End Mobile Sucess Stories Page
+Begin Tablet Query Success Stories*/
+
+@media screen and (min-width: 680px){
+
+	.success_stories{
+		padding: 1%;
+	}
+
+	.nathan_content p, .sidney_content p, .tavis_content p{
+		font-size: 1em;
+
+	}		
+
+} /*End Tablet Media Query for Sucess Stories*/
+/*Begin Desktop Media Query for Success Stories*/
+
+@media screen and (min-width: 960px){
+
+	.main_body{
+		background: #b1dee2;
+		border-right: 5px solid #c7d5d0;
+		width: 79%;
+
+	}
+
+	header{
+		border-bottom: 5px solid #c7d5d0;
+
+	}
+
+	.nathan_content{
+		background-image: url(../img/accent_triangle2.png);
+		background-repeat: no-repeat;
+		background-size: 10% auto;
+		z-index: 1000;
+		position: relative;
+		transform: rotate(90 deg);
+		right: 0;
+		top: 0;
+		width: 100%;
+		
+	}
+
+	.sidney_content{
+		background-image: url(../img/accent_triangle2.png);
+		background-repeat: no-repeat;
+		background-size: 15% auto;
+		left: 0;
+		top: 0;
+		position: relative;
+		width: 100%;
+
+	}
+
+	.tavis_content{
+		background-image: url(../img/accent_triangle2.png);
+		background-repeat: no-repeat;
+
+	}
+
+	.tavis_content h1{
+		margin-left: 3%;
+		margin-bottom: 0;
+	}
+
+	.nathan_content h1, .sidney_content h1, .tavis_content h1{
+		margin-top: 0;
+		padding-top: 6%;
+		width: 25%;
+		float: left;
+		
+	}
+
+	.sidney_content h1{
+		width: 94%;
+		float: right;
+		text-align: right;
+		margin-right: 6%;
+	}
+
+	.nathan_content h1{
+		margin-left: 3%;
+		margin-bottom: 0;
+	}
+
+	.success_stories span{
+		font-size: 1.2em;
+		color: #2ba7af;
+	}
+
+	.success_stories p{
+		font-size: 1em;
+
+	}
+
+	.stories_container img{
+		width: 50%;
+
+	}
+
+	.sidney_content, .tavis_content{
+		border-top: none;
+		margin-top: 0;
+	}
+
+	.sidney_photo{
+		width: 50%;
+		float: right;
+	}
+
+	.sidney_about{
+		width: 50%;
+		float: right;
+	}
+
+	.nathan_content p, .tavis_content p{
+		width: 40%;
+		font-size: 1em;
+	}
+
+	.nathan_content p, .tavis_content p{
+		float: left;
+		margin-top: 2%;
+		
+	}
+
+	.nathan_photo img, .tavis_photo img{
+		float: left;
+	}
+
+	.sidney_photo img{
+		width: 100%;	
+
+	}
+
+	.sidney_content p{
+		width: 80%;
+		float: right;
+		text-align: right;
+		margin-right: 6%;
+	}
+
+	.stories_fact p{
+		background: #e5f5ef;
+		clear: both;
+		font-size: 2em;
+		padding: 2%;
+		text-align: center;
+		margin-bottom: 0;
+		margin-top: 0;
+		border-top: 5px solid #c7d5d0;
+		border-bottom: 5px solid #c7d5d0;
+
+	}
+
+} /*End Desktop Query for Success Stories
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
