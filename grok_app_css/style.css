@@ -1,0 +1,23 @@
+body{
+	font-family: sans-serif;
+}
+
+.grok_app_screenshots img{
+
+	display: inline-block;
+	width: 20%;
+	margin: 2%;
+	border: 2px solid gray;
+
+}
+
+header h1{
+	margin: 2%;
+
+}
+
+a{
+	text-decoration: none;
+	color: gray;
+	margin: 2%;
+}
