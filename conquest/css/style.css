@@ -1,0 +1,1226 @@
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+body {
+  font-family: 'IM Fell Double Pica', serif; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+a:hover {
+  color: #96915b; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase; }
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1024px; }
+
+header {
+  width: 100%;
+  position: relative; }
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.castle img {
+  display: block;
+  width: 100%;
+  margin-bottom: 1%; }
+
+.slogan {
+  position: absolute;
+  top: 6%;
+  left: 0;
+  right: 0; }
+  @media screen and (min-width: 960px) {
+    .slogan {
+      top: 10%; } }
+  .slogan h1 {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Homemade Apple', 'serif';
+    text-transform: none; }
+    @media screen and (min-width: 680px) {
+      .slogan h1 {
+        font-size: 2em; } }
+    @media screen and (min-width: 960px) {
+      .slogan h1 {
+        font-size: 2.9em; } }
+
+.primary_navigation {
+  margin-bottom: 0;
+  margin-top: 0; }
+  @media screen and (min-width: 960px) {
+    .primary_navigation {
+      margin-top: 5%; } }
+  .primary_navigation ul {
+    display: block;
+    margin: 3% auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%; }
+    @media screen and (min-width: 550px) {
+      .primary_navigation ul {
+        width: 30%; } }
+    @media screen and (min-width: 960px) {
+      .primary_navigation ul {
+        width: 100%;
+        margin: 0 auto; } }
+    .primary_navigation ul li {
+      padding: 1.5%; }
+      @media screen and (min-width: 960px) {
+        .primary_navigation ul li {
+          padding: 0.5%; } }
+    .primary_navigation ul a {
+      display: block;
+      text-decoration: none;
+      color: #8a2728;
+      border: 2px solid #8a2728;
+      padding: 0.2em 0.5em; }
+      @media screen and (min-width: 680px) {
+        .primary_navigation ul a {
+          font-size: 1.1em; } }
+
+.primary_navigation a:hover {
+  color: #ffffff;
+  background: #000000; }
+
+@media screen and (min-width: 960px) {
+  .primary_navigation li {
+    display: inline-block; } }
+
+@media screen and (min-width: 960px) {
+  .primary_navigation {
+    margin-top: 3%;
+    margin-bottom: 2%; } }
+
+.logo {
+  display: block;
+  width: 33%;
+  margin: 0 auto; }
+  .logo img {
+    width: 100%; }
+
+.homepage_buttons {
+  width: 94%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15%; }
+  .homepage_buttons:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 960px) {
+    .homepage_buttons {
+      padding-bottom: 0; } }
+  .homepage_buttons a {
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+    vertical-align: top;
+    display: block;
+    border: 3px solid #96915b;
+    width: 48%;
+    margin: 0 auto 1em auto;
+    padding-top: 0.7em;
+    padding-right: 1%;
+    padding-left: 1%;
+    height: 85px;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: 'Homemade Apple', 'serif'; }
+    @media screen and (min-width: 550px) {
+      .homepage_buttons a {
+        width: 28%;
+        font-size: 1.1em; } }
+    @media screen and (min-width: 680px) {
+      .homepage_buttons a {
+        font-size: 1.2em; } }
+    @media screen and (min-width: 960px) {
+      .homepage_buttons a {
+        color: #000000;
+        background: #ffffff;
+        width: 200px;
+        height: 120px;
+        font-size: 1.6em;
+        margin: 0;
+        display: inline-block;
+        margin: 1.5%; } }
+
+.homepage_buttons a:hover {
+  color: #ffffff;
+  background: #000000;
+  text-transform: none;
+  font-family: 'Homemade Apple', 'serif'; }
+
+.building {
+  display: block;
+  width: 94%;
+  margin: 3%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  @media screen and (min-width: 960px) {
+    .building {
+      width: 50%;
+      float: left;
+      margin-bottom: 2%;
+      margin-top: 3%;
+      margin-left: 0;
+      margin-right: 0; } }
+
+.about_section {
+  padding-bottom: 15%; }
+  @media screen and (min-width: 960px) {
+    .about_section {
+      position: relative;
+      clear: both; }
+      .about_section:after {
+        content: "";
+        display: table;
+        clear: both; } }
+
+.about_title h1 {
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: 3px solid #96915b; }
+  @media screen and (min-width: 960px) {
+    .about_title h1 {
+      margin-top: 0;
+      font-size: 2.8em;
+      text-align: left;
+      padding-left: 7%; } }
+
+.about_sword {
+  display: block;
+  width: 10%;
+  margin: 2% auto; }
+  @media screen and (min-width: 960px) {
+    .about_sword {
+      width: 6%;
+      position: absolute;
+      bottom: 87%;
+      left: 2%; } }
+
+.about_article {
+  margin-left: 3%;
+  margin-right: 3%; }
+  @media screen and (min-width: 960px) {
+    .about_article {
+      width: 44%;
+      float: left;
+      margin: 3%; } }
+  .about_article p {
+    font-size: 0.9em; }
+    @media screen and (min-width: 680px) {
+      .about_article p {
+        font-size: 1em; } }
+
+@media screen and (min-width: 960px) {
+  .invite {
+    clear: both;
+    width: 100%;
+    padding-top: 2%; } }
+
+.invite h3 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1em; }
+  @media screen and (min-width: 680px) {
+    .invite h3 {
+      font-size: 1.3em; } }
+  @media screen and (min-width: 960px) {
+    .invite h3 {
+      font-size: 1em;
+      text-align: center;
+      width: 100%;
+      margin: 2% auto;
+      font-family: 'Homemade Apple', 'serif';
+      text-transform: none; } }
+
+.social_media {
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .social_media {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 15%; } }
+
+@media screen and (min-width: 960px) {
+  .social_media li {
+    display: inline-block; } }
+
+.social_media img {
+  width: 60%; }
+
+.tastingroom_section {
+  margin-right: 3%;
+  margin-left: 3%; }
+  .tastingroom_section:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 960px) {
+    .tastingroom_section {
+      margin-right: 0;
+      margin-left: 0; } }
+
+.tr_photos img {
+  display: block;
+  width: 94%;
+  margin: 2% 3%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  @media screen and (min-width: 680px) {
+    .tr_photos img {
+      width: 31.333%;
+      float: left;
+      margin-left: 1%;
+      margin-right: 1%; } }
+
+.tastingroom_title {
+  clear: both; }
+  @media screen and (min-width: 960px) {
+    .tastingroom_title {
+      padding-left: 7%;
+      clear: both;
+      position: relative;
+      padding-right: 3%; }
+      .tastingroom_title:after {
+        content: "";
+        display: table;
+        clear: both; } }
+
+.tastingroom_title h1 {
+  border-bottom: 3px solid #96915b;
+  text-align: center;
+  margin-bottom: 0; }
+  @media screen and (min-width: 960px) {
+    .tastingroom_title h1 {
+      display: block;
+      font-size: 2.8em;
+      border-bottom: none;
+      float: left;
+      width: 45%;
+      text-align: left; } }
+
+.tr_sword {
+  display: block;
+  width: 10%;
+  margin: 2% auto; }
+  @media screen and (min-width: 960px) {
+    .tr_sword {
+      position: absolute;
+      top: 0;
+      left: 2%;
+      width: 6%;
+      margin-top: 2.2em; } }
+
+.tastingroom_title h3 {
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .tastingroom_title h3 {
+      display: block;
+      float: left;
+      width: 54%;
+      text-align: right;
+      margin-bottom: 0;
+      margin-top: 2.5em; } }
+
+.tastingroom_title h6 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1em;
+  margin: 3%; }
+  @media screen and (min-width: 680px) {
+    .tastingroom_title h6 {
+      font-size: 1.3em; } }
+  @media screen and (min-width: 960px) {
+    .tastingroom_title h6 {
+      display: none; } }
+
+.tastingroom_divider {
+  text-align: center;
+  padding-bottom: 15%; }
+  .tastingroom_divider:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 960px) {
+    .tastingroom_divider {
+      width: 100%;
+      margin-top: 0;
+      border-top: 3px solid #96915b;
+      clear: both; } }
+  .tastingroom_divider li {
+    font-size: 0.9em; }
+    @media screen and (min-width: 680px) {
+      .tastingroom_divider li {
+        font-size: 1em; } }
+
+.on_tap, .upcoming_brews {
+  display: block;
+  width: 44%;
+  float: left;
+  padding: 3%; }
+  @media screen and (min-width: 960px) {
+    .on_tap, .upcoming_brews {
+      width: 33.333%;
+      float: left;
+      padding: 0; } }
+
+.upcoming_brews ul {
+  display: block;
+  margin: 0 auto; }
+
+@media screen and (min-width: 960px) {
+  .hours {
+    width: 33.333%;
+    float: left; } }
+
+.on_tap h3, .upcoming_brews h3, .hours h3 {
+  font-family: 'Homemade Apple', 'serif';
+  text-transform: none; }
+
+.brewers_section {
+  padding-bottom: 15%; }
+  .brewers_section:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.brewers_sword {
+  display: block;
+  width: 10%;
+  margin: 2% auto; }
+  @media screen and (min-width: 960px) {
+    .brewers_sword {
+      width: 6%;
+      position: absolute;
+      top: -26%;
+      left: 2%; } }
+
+@media screen and (min-width: 960px) {
+  .brewers_title {
+    position: relative; } }
+
+.brewers_title h1 {
+  clear: both;
+  display: block;
+  margin: 3% auto;
+  text-align: center;
+  border-bottom: 3px solid #96915b; }
+  @media screen and (min-width: 960px) {
+    .brewers_title h1 {
+      font-size: 2.8em;
+      text-align: left;
+      padding-left: 7%;
+      border-bottom: none;
+      margin-bottom: 0; } }
+
+.brewer_imgs {
+  display: block;
+  width: 100%; }
+  .brewer_imgs:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 960px) {
+    .brewer_imgs {
+      border-top: 3px solid #96915b;
+      padding-top: 3%; } }
+  .brewer_imgs img {
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: left; }
+
+.brewer_names {
+  text-align: center; }
+  .brewer_names:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 960px) {
+    .brewer_names {
+      text-align: left; } }
+
+.brewer_names h2 {
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Homemade Apple', 'serif';
+  text-transform: none; }
+
+.brewers_articles {
+  display: block;
+  width: 100%; }
+  .brewers_articles article {
+    width: 40%;
+    padding: 5%;
+    padding-top: 0;
+    float: left;
+    font-size: 0.9em; }
+    @media screen and (min-width: 680px) {
+      .brewers_articles article {
+        font-size: 1em; } }
+
+.beers_section {
+  margin-right: 3%;
+  margin-left: 3%;
+  padding-bottom: 15%; }
+  @media screen and (min-width: 960px) {
+    .beers_section {
+      margin-right: 0;
+      margin-left: 0; }
+      .beers_section:after {
+        content: "";
+        display: table;
+        clear: both; } }
+
+@media screen and (min-width: 960px) {
+  .beers_title {
+    position: relative;
+    border-bottom: 3px solid #96915b;
+    margin-bottom: 3%;
+    padding-left: 7%; }
+    .beers_title:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
+.beer_types > li {
+  text-decoration: none;
+  color: #8a2728; }
+
+.beers_title a:hover {
+  color: #96915b; }
+
+.beers_title h1 {
+  clear: both;
+  display: block;
+  margin: 3% auto;
+  text-align: center;
+  border-bottom: 3px solid #96915b; }
+  @media screen and (min-width: 960px) {
+    .beers_title h1 {
+      font-size: 2.8em;
+      text-align: left;
+      border-bottom: none;
+      margin: 0;
+      width: 15%;
+      float: left; } }
+
+.beers_sword {
+  display: block;
+  width: 10%;
+  margin: 2% auto; }
+  @media screen and (min-width: 960px) {
+    .beers_sword {
+      width: 6%;
+      position: absolute;
+      top: -30%;
+      left: 2%; } }
+
+.beers_title ul {
+  padding-bottom: 10%; }
+  @media screen and (min-width: 680px) {
+    .beers_title ul {
+      width: 93%;
+      margin: 7% auto;
+      text-align: center; } }
+  @media screen and (min-width: 960px) {
+    .beers_title ul {
+      width: 85%;
+      float: right;
+      margin: 1% 0;
+      padding-bottom: 0; } }
+
+.beers_title li {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1em; }
+  @media screen and (min-width: 680px) {
+    .beers_title li {
+      font-size: 0.9em;
+      display: inline-block;
+      padding-left: 2%;
+      padding-right: 2%; } }
+  @media screen and (min-width: 960px) {
+    .beers_title li {
+      font-size: 1.1em; } }
+
+.hover {
+  display: none; }
+  @media screen and (min-width: 680px) {
+    .hover:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .hover ul {
+      padding: 2%; }
+    .hover li {
+      display: block;
+      width: 175px;
+      font-size: 0.8em;
+      padding: 3%;
+      color: #ffffff;
+      background: #8a2728;
+      text-align: left; } }
+
+@media screen and (min-width: 680px) {
+  .beer_types > li:hover ul {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 90%;
+    right: 1%;
+    left: 4%;
+    z-index: 1000;
+    padding: 3%; } }
+
+@media screen and (min-width: 680px) {
+  .beer_types > li {
+    position: relative; } }
+
+.beer_types a {
+  color: #ffffff;
+  text-decoration: none; }
+
+.beer_types a:hover {
+  color: #ffffff; }
+
+@media screen and (min-width: 960px) {
+  .beers_img {
+    width: 33.333%;
+    float: left;
+    clear: both; }
+    .beers_img:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
+.beers_img img {
+  display: block;
+  width: 37%;
+  float: left;
+  margin-left: 3%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  @media screen and (min-width: 960px) {
+    .beers_img img {
+      width: 100%; } }
+
+.beer_details {
+  display: block;
+  width: 54%;
+  float: left;
+  padding-left: 3%;
+  padding-right: 3%; }
+  @media screen and (min-width: 960px) {
+    .beer_details {
+      width: 29%;
+      margin-top: 1.2%; } }
+  .beer_details h3 {
+    font-size: 0.8em;
+    margin-top: 0; }
+    @media screen and (min-width: 680px) {
+      .beer_details h3 {
+        font-size: 1.3em; } }
+  .beer_details h1 {
+    font-size: 1.1em;
+    font-family: 'Homemade Apple', 'serif';
+    text-transform: none; }
+    @media screen and (min-width: 680px) {
+      .beer_details h1 {
+        font-size: 1.5em; } }
+    @media screen and (min-width: 960px) {
+      .beer_details h1 {
+        font-size: 1.9em;
+        margin-top: 0; } }
+  .beer_details li {
+    font-size: 0.7em; }
+    @media screen and (min-width: 680px) {
+      .beer_details li {
+        font-size: 1em; } }
+    @media screen and (min-width: 960px) {
+      .beer_details li {
+        font-size: 1.3em; } }
+
+@media screen and (min-width: 960px) {
+  .beer_article {
+    width: 25%;
+    float: left; }
+    .beer_article:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
+.beer_article article {
+  clear: both;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 0;
+  font-size: 0.9em; }
+  @media screen and (min-width: 680px) {
+    .beer_article article {
+      font-size: 1em; } }
+  @media screen and (min-width: 960px) {
+    .beer_article article {
+      padding: 4%;
+      margin: 0;
+      width: 100%; } }
+
+.find_our_beer {
+  padding-bottom: 15%; }
+  @media screen and (min-width: 960px) {
+    .find_our_beer {
+      clear: both; }
+      .find_our_beer:after {
+        content: "";
+        display: table;
+        clear: both; } }
+
+.find_our_beer iframe {
+  display: block;
+  width: 94%;
+  margin-bottom: 5%;
+  margin: 0 auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  @media screen and (min-width: 960px) {
+    .find_our_beer iframe {
+      width: 60%;
+      float: left; } }
+
+@media screen and (min-width: 960px) {
+  .find_title {
+    position: relative; } }
+
+.find_title h1 {
+  display: block;
+  margin: 3% auto;
+  text-align: center;
+  border-bottom: 3px solid #96915b; }
+  @media screen and (min-width: 960px) {
+    .find_title h1 {
+      font-size: 2.8em;
+      text-align: left;
+      padding-left: 7%; } }
+
+.find_sword {
+  display: block;
+  width: 10%;
+  margin: 2% auto; }
+  @media screen and (min-width: 960px) {
+    .find_sword {
+      width: 6%;
+      position: absolute;
+      bottom: -42%;
+      left: 2%; } }
+
+.find_description {
+  display: block;
+  width: 100%;
+  margin-bottom: 5%; }
+  @media screen and (min-width: 960px) {
+    .find_description {
+      width: 38%;
+      float: left;
+      margin-bottom: 0; } }
+  .find_description img {
+    display: block;
+    margin: 0 auto;
+    width: 40%; }
+    @media screen and (min-width: 680px) {
+      .find_description img {
+        width: 30%; } }
+    @media screen and (min-width: 960px) {
+      .find_description img {
+        width: 40%; } }
+  .find_description h2 {
+    display: block;
+    margin: 5% 3% 5%;
+    text-align: center; }
+    @media screen and (min-width: 960px) {
+      .find_description h2 {
+        margin: 25% auto 5%;
+        width: 75%;
+        font-size: 1.4em;
+        font-family: 'Homemade Apple', 'serif';
+        text-transform: none; } }
+
+.events {
+  padding-bottom: 15%; }
+  .events:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media screen and (min-width: 960px) {
+  .events_title {
+    position: relative; } }
+
+.events_title h1 {
+  display: block;
+  margin: 3% auto;
+  text-align: center;
+  border-bottom: 3px solid #96915b; }
+  @media screen and (min-width: 960px) {
+    .events_title h1 {
+      font-size: 2.5em;
+      text-align: left;
+      padding-left: 7%; } }
+
+.events_sword {
+  display: block;
+  width: 10%;
+  margin: 2% auto; }
+  @media screen and (min-width: 960px) {
+    .events_sword {
+      width: 6%;
+      position: absolute;
+      bottom: -46%;
+      left: 2%; } }
+
+.twitter_title {
+  display: block;
+  width: 50%;
+  float: left; }
+  @media screen and (min-width: 960px) {
+    .twitter_title {
+      float: right;
+      width: 20%;
+      margin-top: 2%; } }
+  .twitter_title h3 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: 'Homemade Apple', 'serif';
+    text-transform: none; }
+    @media screen and (min-width: 960px) {
+      .twitter_title h3 {
+        font-size: 1em; } }
+  .twitter_title img {
+    display: block;
+    margin: 3% auto; }
+
+.tweets {
+  display: block;
+  width: 44%;
+  float: left;
+  background: #efefef;
+  margin-right: 3%;
+  padding: 1%;
+  border-left: 1.5px solid #8a2728; }
+  @media screen and (min-width: 960px) {
+    .tweets {
+      width: 80%;
+      margin-right: 0;
+      padding: 0;
+      border-left: none; } }
+  .tweets p {
+    margin-top: 0;
+    font-size: 0.8em; }
+    @media screen and (min-width: 680px) {
+      .tweets p {
+        font-size: 1em; } }
+    @media screen and (min-width: 960px) {
+      .tweets p {
+        width: 21%;
+        float: right;
+        padding: 1.5%;
+        font-size: 0.9em; } }
+
+.twitter_feed {
+  margin-top: 3%; }
+  .twitter_feed:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 960px) {
+    .twitter_feed {
+      width: 100%;
+      margin-bottom: 10%; } }
+
+.balanced_brews {
+  margin-top: 10%; }
+  .balanced_brews:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 960px) {
+    .balanced_brews {
+      background-image: url(../img/yoga_divider.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-top: 7%;
+      border-top: 3px solid #96915b;
+      position: relative; } }
+
+.balanced_brews img {
+  display: block;
+  width: 45%;
+  float: left;
+  margin-left: 3%;
+  border: solid 4px #000000; }
+  @media screen and (min-width: 960px) {
+    .balanced_brews img {
+      width: 35%;
+      margin-left: 7%;
+      margin-top: 2%; } }
+
+.balanced_brews h2 {
+  text-align: center;
+  margin-top: 3%; }
+  @media screen and (min-width: 960px) {
+    .balanced_brews h2 {
+      font-size: 1.8em;
+      margin-top: 0;
+      position: absolute;
+      top: -17%;
+      right: 3%; } }
+
+.yoga_info {
+  display: block;
+  width: 44%;
+  float: left;
+  padding: 3%; }
+  @media screen and (min-width: 960px) {
+    .yoga_info {
+      width: 50%;
+      padding: 0; } }
+  .yoga_info h5 {
+    font-size: 1.1em;
+    margin-top: 0;
+    font-family: 'Homemade Apple', 'serif';
+    text-transform: none; }
+    @media screen and (min-width: 960px) {
+      .yoga_info h5 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 43%;
+        left: 47%;
+        font-size: 2em; } }
+  @media screen and (min-width: 680px) {
+    .yoga_info h6 {
+      font-size: 1em;
+      font-family: 'Homemade Apple', 'serif';
+      text-transform: none; } }
+  @media screen and (min-width: 960px) {
+    .yoga_info h6 {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 71%;
+      left: 45%;
+      font-size: 1.1em; } }
+
+@media screen and (min-width: 960px) {
+  .contact_title {
+    position: relative; } }
+
+.contact_title h1 {
+  clear: both;
+  text-align: center;
+  border-bottom: 3px solid #96915b;
+  margin-top: 3%; }
+  @media screen and (min-width: 960px) {
+    .contact_title h1 {
+      font-size: 2.8em;
+      text-align: left;
+      padding-left: 3%;
+      padding-top: 0;
+      padding-left: 7%; } }
+
+.contact_sword {
+  display: block;
+  width: 10%;
+  margin: 2% auto; }
+  @media screen and (min-width: 960px) {
+    .contact_sword {
+      width: 6%;
+      position: absolute;
+      bottom: -45%;
+      left: 2%; } }
+
+.contact_us {
+  background: #e1e1e1;
+  padding-bottom: 3%;
+  padding-top: 3%; }
+  @media screen and (min-width: 960px) {
+    .contact_us {
+      width: 100%; }
+      .contact_us:after {
+        content: "";
+        display: table;
+        clear: both; } }
+
+@media screen and (min-width: 960px) {
+  .contact_form {
+    float: left;
+    width: 65%; }
+    .contact_form:after {
+      content: "";
+      display: table;
+      clear: both; } }
+.contact_form h4 {
+  text-align: center;
+  margin: 3%;
+  font-family: 'Homemade Apple', 'serif';
+  text-transform: none; }
+  @media screen and (min-width: 960px) {
+    .contact_form h4 {
+      text-align: left;
+      color: #000000;
+      font-size: 1.2em;
+      padding-top: 1%;
+      margin-bottom: 0;
+      margin-left: 10%; } }
+.contact_form form {
+  display: block;
+  width: 100%;
+  margin: 3% auto;
+  color: #cccccc; }
+  @media screen and (min-width: 960px) {
+    .contact_form form {
+      float: left;
+      padding-left: 3%;
+      width: 60%;
+      margin-left: 7%; } }
+  .contact_form form input {
+    display: block;
+    width: 200px;
+    margin: 1% auto; }
+    @media screen and (min-width: 960px) {
+      .contact_form form input {
+        width: 93%; } }
+  .contact_form form button {
+    display: block;
+    color: #ffffff;
+    background: #000000;
+    padding: 1% 8%;
+    font-family: 'Homemade Apple', 'serif';
+    border: 2px solid white; }
+
+textarea {
+  width: 200px;
+  padding: 1%;
+  border: 0.5px inset #efefef;
+  margin-top: 5%;
+  max-height: 150px;
+  display: block;
+  margin: 0 auto; }
+  @media screen and (min-width: 960px) {
+    textarea {
+      margin-left: 0;
+      width: 374px;
+      max-width: 374px;
+      max-height: 132px;
+      margin-bottom: 2%; } }
+
+@media screen and (min-width: 960px) {
+  .contact_form input:nth-child(1) {
+    width: 44%;
+    margin-right: 2%;
+    padding: 1%; } }
+
+@media screen and (min-width: 960px) {
+  .contact_form input:nth-child(2) {
+    width: 44%;
+    margin-right: 2%;
+    padding: 1%; } }
+
+@media screen and (min-width: 960px) {
+  .contact_form form input:nth-child(3) {
+    width: 44%;
+    margin-right: 2%;
+    padding: 1%; } }
+
+@media screen and (min-width: 960px) {
+  .short {
+    float: left; } }
+
+@media screen and (min-width: 960px) {
+  .long {
+    float: left;
+    padding: 1%; } }
+
+.contact_us button {
+  clear: both;
+  margin: 2% auto;
+  padding: 1%; }
+  @media screen and (min-width: 960px) {
+    .contact_us button {
+      float: left; } }
+
+.contact_info {
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .contact_info {
+      display: block;
+      width: 30%;
+      float: left;
+      color: #000000;
+      font-size: 0.8em;
+      text-align: left;
+      margin-left: 0 auto;
+      margin-top: 2%; } }
+
+.secondary_navigation {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: 20%;
+  margin-top: 10%;
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000; }
+  @media screen and (min-width: 960px) {
+    .secondary_navigation {
+      clear: both; } }
+  .secondary_navigation ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%; }
+    @media screen and (min-width: 680px) {
+      .secondary_navigation ul {
+        width: 30%; } }
+    @media screen and (min-width: 960px) {
+      .secondary_navigation ul {
+        width: 100%; } }
+    .secondary_navigation ul a {
+      text-decoration: none;
+      color: #8a2728;
+      text-transform: uppercase;
+      display: block;
+      padding: 0.2em 0.5em;
+      border: 2px solid #8a2728;
+      font-size: 1.1em; }
+
+.secondary_navigation li {
+  padding: 1.5%; }
+  @media screen and (min-width: 960px) {
+    .secondary_navigation li {
+      padding: 0;
+      display: inline-block;
+      margin: 0.5%;
+      font-size: 1.2em; } }
+
+.secondary_navigation a:hover {
+  color: #ffffff;
+  background: #000000; }
+
+.footer_nav {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .footer_nav {
+      text-align: center; } }
+  .footer_nav li {
+    display: inline-block;
+    width: 13%;
+    font-size: 0.5em;
+    text-align: center; }
+    @media screen and (min-width: 960px) {
+      .footer_nav li {
+        font-size: 1em;
+        text-transform: uppercase;
+        width: 10%; } }
+  .footer_nav a {
+    color: #8a2728;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em; }
+
+@media screen and (min-width: 960px) {
+  .fine_print ul {
+    width: 100%; } }
+.fine_print li {
+  font-size: 0.7em;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .fine_print li {
+      font-size: 0.8em; } }
+
+.footer_nav img {
+  width: 30%; }
+  @media screen and (min-width: 680px) {
+    .footer_nav img {
+      width: 25%; } }
+  @media screen and (min-width: 960px) {
+    .footer_nav img {
+      width: 50%; } }
+
+@media screen and (min-width: 960px) {
+  .footer_nav li:nth-child(3) {
+    width: 4%; } }
+
+@media screen and (min-width: 960px) {
+  .footer_nav li:nth-child(4) {
+    width: 4%; } }
+
+@media screen and (min-width: 960px) {
+  .footer_nav li:nth-child(5) {
+    width: 4%; } }
+
+footer p {
+  font-size: 0.7em;
+  text-align: center;
+  padding-top: 10%; }
+  @media screen and (min-width: 680px) {
+    footer p {
+      padding-top: 2%; } }
+  @media screen and (min-width: 960px) {
+    footer p {
+      font-size: 0.8em;
+      padding-top: 0; } }
+
+/*# sourceMappingURL=style.css.map */
