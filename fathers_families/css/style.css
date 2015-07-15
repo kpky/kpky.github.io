@@ -9,6 +9,8 @@ light green body - e5f5ef
 orange accents - d65d00
 gray borders- c7d5d0
 
+yellow: #fdf18e;
+
 /*border: 5px solid #c7d5d0;*/
 
 
@@ -28,73 +30,56 @@ gray borders- c7d5d0
 
 body{
 	background: #e5f5ef;
-	font-family: "Montserrat" "Helvetica" "sans-serif";
+	font-family: 'Cabin Sketch', 'san-serif';
 	color: #082329;
-	margin: 0;
 
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Fugaz One' cursive;
+	font-family: 'Cabin Sketch', 'san-serif';
 
 }
 
 .wrapper{
+	display: block;
 	margin: 0 auto;
-	max-width: 1024px;
+	
 }
 
 .search_programs{
-	display: none;
+	display: block;
+	text-align: center;
+	margin-top: 7%;
 }
 
-
-.search_programs_m{
-	display: block;
-	font-family: 'Fugaz One', cursive;
-	padding: 0;
-	width: 100%;
+.search_programs form{
+	width: 90%;
 	margin: 0 auto;
 }
 
-.search_programs_m form{
-	display: block;
-	width: 100%;
+.search_programs input{
+	width: 70%;
+	padding: 2%;
+	margin: 1%;
+	border: 1px solid #082329;
 }
 
-.search_programs_m label{
+.search_programs button{
 	display: inline-block;
-	width: 30%;
-	font-size: 0.7em;
-	text-align: right;
-}
-
-
-.search_programs_m input{
-	display: inline-block;
-	width: 35%;
-	padding: 1%;
-	margin-right: 1%;
-	margin-left: 1%;
-
-}
-
-
-.search_programs_m button{
-	display: inline-block;
-	width: 13%;
-	font-family: 'Fugaz One' cursive;
-	background: #c7d5d0;
-	border-radius: 3px;
-	padding: 1%;
+	width: 75%;
+	font-family: 'Cabin Sketch', 'san-serif';
+	background: #2ba7af;
+	padding: 2%;
 	border: none;
+	margin: 1%;
+	border: 1px solid #082329;
 }
 
 .logo img{
 
 	display: block;
 	clear: both;
-	width: 70%;
+	width: 94%;
 	margin: 1% auto;
 
 }
@@ -105,7 +90,7 @@ h1, h2, h3, h4, h5, h6{
 
 .social_media{
 	margin: 0 auto;
-	width: 17%;
+	width: 12%;
 
 
 }
@@ -131,6 +116,7 @@ h1, h2, h3, h4, h5, h6{
 	padding-left: 0;
 	text-align: center;
 	margin-bottom: 0;
+	
 }
 
 .main_navigation br{
@@ -138,19 +124,19 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .main_navigation ul{
-	width: 100%;
+	width: 50%;
 	padding-left: 0;
-	margin-bottom: 0;
-	margin-top: 0;
+	margin: 5% auto;
 }
 
 .main_navigation li{
 	display: inline-block;
 	width: 100%;
-	padding: 0.5%;
-	background: #b1dee2;
+	padding-bottom: 0.25em;
+	padding-top: 0.25em;
+	background: #082329;
 	font-size: 1.3em;
-	font-family: 'Fugaz One' cursive;
+	font-family: 'Cabin Sketch', 'san-serif';
 	font-weight: 700;
 	border-bottom: 2px solid #efefef;
 
@@ -158,7 +144,7 @@ h1, h2, h3, h4, h5, h6{
 
 .main_navigation a{
 	text-decoration: none;
-	color: #09282f;
+	color: #ffffff;
 
 }
 
@@ -175,8 +161,8 @@ h1, h2, h3, h4, h5, h6{
 }	
 
 .boy_train img, .hands img{
-	width: 100%;
-	margin-bottom: 2%;
+	width: 94%;
+	margin: 4%;
 
 }
 
@@ -186,6 +172,10 @@ h1, h2, h3, h4, h5, h6{
 	margin-bottom: 2%;
 	padding: 2%;
 	clear: both;
+}
+
+.volunteer_button, .donate_button{
+	margin: 3%;
 }
 
 .volunteer_button img, .donate_button img{
@@ -201,33 +191,47 @@ h1, h2, h3, h4, h5, h6{
 .donate_content p{
 	margin-top: 0;
 	margin-bottom: 0;
+	border: 3px solid black;
+  	padding: 2%;
+  	
 }
 
 .donate_content span{
-	font-family: 'Fugaz One' cursive;
+	font-family: 'Cabin Sketch', 'san-serif';
 	font-size: 1.3em;
 }
 
+.bottom_statement{
+	margin-bottom: 5%;
+  	margin-top: 5%;
+}
+
 .bottom_statement h4{
-	margin: 0;
-	padding: 3%;
+	margin: 3%;
+	padding: 4%;
 	text-align: left;
 	border-top: 5px solid #c7d5d0;
 	border-bottom: 5px solid #c7d5d0;
+	font-size: 1.7em;
 }
 
 .site_footer{
 	background: #082329;
-	width: 100%;
+	width: 84%;
+	margin: 3%;
+	padding: 5%;
 }
 
 .secondary_nav, .disclaimer_copyright, .address{
 	padding-left: 0;
 	list-style: none;
 	margin: 3%;
-	width: 22%;
-	text-align: center;
+	width: 26%;
 	
+}
+
+.secondary_nav, .disclaimer_copyright{
+	width: 28%;
 }
 
 .site_footer ul{
@@ -240,7 +244,7 @@ h1, h2, h3, h4, h5, h6{
 
 .secondary_nav li, .disclaimer_copyright li, .address li{
 	font-size: 0.5em; 
-	text-align: left;
+	text-align: center;
 
 }
 
@@ -250,15 +254,6 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-@media screen and (min-width: 440px){
-
-.search_programs_m label{
-
-	width: 32%;
-	font-size: 0.8em;
-}
-
-}
 /*Begin Tablet Media Query for Donate Page*/
 
 @media screen and (min-width: 680px){
@@ -268,39 +263,51 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
+.volunteer_button, .donate_button{
+	width: 44%;
+  	float: left;
+}
+
+.donate_title h4{
+	clear: both;
+  	font-size: 2em;
+  	margin: 3%;
+  	padding: 0;
+}
+
+.donate_content{
+	clear: both;
+}
+
+.search_programs form{
+	width: 50%;
+}
+
 .social_media{
-	width: 13%;
+	width: 7%;
 }
 
-.main_navigation{
-	background: #b1dee2;
-
-}
-
-.main_navigation li{
-	background: none;
-	font-size: 1.4em;
-	display: inline-block;
-	width: 30%;
-	border-bottom: none;
-}
-
-.search_programs_m label{
-
-	width: 32%;
-	font-size: 0.8em;
-}
 
 }
 
- /*End Tablet Media Query for Donate Page*/
+/*End Tablet Media Query for Donate Page*/
+
+
 /*Begin Desktop Design for Donate Page*/
 
 @media screen and (min-width: 960px){
 
+.wrapper{	
+	
+	margin-left: 300px;
+	max-width: 924px;
+	border-left: 15px solid #c7d5d0;
+
+
+}	
+
 header{
-	background: #b1dee2;
-	background-image: url(../img/hands.png);
+	
 	background-repeat: no-repeat;
 	background-size: 54%;
 	background-position: left;
@@ -308,16 +315,11 @@ header{
 
 }
 
-.social_media{
-	margin-right: 3%;
-
-}
-
 
 .logo{
-	width: 41%;
+	width: 48%;
 	float: right;
-	padding-right: 2%;
+	padding-right: 1%;
 	
 }
 
@@ -328,7 +330,7 @@ header{
 }
 
 .facebook{
-	width: 50%;
+	width: 48%;
 
 
 }
@@ -339,9 +341,9 @@ header{
 }
 
 .main_body_donate{
-	float: left;
-	width: 78%;
-	border-right: 5px solid #c7d5d0;
+	width: 100%;
+
+
 }
 
 .main_navigation{
@@ -382,36 +384,44 @@ header{
 .boy_train img{
 	width: 100%;
 	float: left;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .hands img{
 	width: 100%;
 	float: left;
-	margin-bottom: 0;
+	margin: 0;
 
+}
+
+.donate_title{
+	width: 100%;
 }
 
 .donate_title h4{
 	background: #b1dee2;
 	clear: both;
 	text-align: center;
-	padding-left: 2%;
 	margin: 0;
-	padding: 1%;
-	font-size: 1.1em;
+	font-size: 2em;
 	border-top: 5px solid #c7d5d0; 
 	border-bottom: 5px solid #c7d5d0;
 }
 
-.volunteer_button img{
+.donate_button, .volunteer_button{
+	margin: 0;
 	width: 50%;
+
+}
+
+.volunteer_button img{
+	width: 100%;
 	float: left;
 	
 }
 
 .donate_button img{
-	width: 50%;
+	width: 100%;
 	float: left;
 }
 
@@ -422,10 +432,19 @@ header{
 	margin-top: 2%;
 }
 
+.donate_content p{
+	border: none;
+}
+
+.bottom_statement{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
 .bottom_statement h4{
 	clear: both;
 	background: #b1dee2;
-	width: 94%;
+	width: 92%;
 	font-size: 1.2em;
 	text-align: left;
 	margin-left: 0;
@@ -450,6 +469,7 @@ header{
 .address li{
 	color: #e5f5ef;
 	text-align: left;
+	font-size: 0.7em;
 
 }	
 
@@ -462,6 +482,7 @@ header{
 	display: inline-block;
 	padding: 0 2%;
 	margin-left: 0;
+	font-size: 0.7em;
 
 }
 
@@ -473,13 +494,22 @@ header{
 
 .secondary_nav li{
 	text-align: right;
+	font-size: 0.7em;
 }
 
 .secondary_nav a{
 	color: #2ba7af;
+
 }
 
-} /*End Desktop Media Query 960 for Donate Page*/
+.resources_container, footer{
+	max-width: 1239px;
+
+}
+
+} 
+
+/*End Desktop Media Query 960 for Donate Page*/
 
 /*Begin Mobile Design for Homepage*/
 
@@ -490,40 +520,54 @@ header{
 
 .featured_box img{
 	display: block;
-	width: 100%;
+	width: 70%;
+	margin: 3% auto;
 }
 
 .featured_box p{
-	font-size: 0.9em;
-	margin: 0% 0% 4% 3%;
+	font-size: 1em;
+	margin: 4% 8%;
 	font-weight: 700;
+	border: 2px solid #082329;
+	padding: 2%;
+	color: #082329;
 
+}
+.homepage_donation_button{
+	margin-top: 0;
 }
 
 .homepage_donation_button img{
 	display: block;
-	width: 100%;
+	margin: 0 auto;
+	width: 240px;
 }
 
 .homepage_title{
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: center;
+	font-size: 3em;
+	
+}
+
+.homepage_title h1{
+
 }
 
 .about_video iframe{
 
 	display: block;
-	margin: 2% auto;
+	margin: 0 auto;
 }
 
 .homepage_facts{
 	clear: both;
 	background: #b1dee2;
-	font-family: 'Fugaz One' cursive;
 	font-size: 0.9em;
 	padding: 3% 4% 4% 4%;
 	line-height: 1.5;
+	margin: 3%;
 
 }
 
@@ -533,17 +577,15 @@ header{
 }
 
 .homepage_facts span{
-	font-size: 1.5em;
+	font-size: 1em;
 	color: #2ba7af;
 }
 
-.search_programs_m{
-	font-family: 'Fugaz One', cursive;
-	padding: 4%;
-}
 
 .resources_container{
 	background: #09282f;
+	padding-bottom: 6%;
+	margin: 0 3%;
 }
 
 .resources_container h3{
@@ -556,19 +598,25 @@ header{
 }
 
 .resources_container ul{
-	padding-left: 3%;
-	padding-bottom: 3%;
+	padding: 3%;
+	margin: 0 3% 0 5%;
 	list-style: none;
-	margin-top: 0;
-	margin-bottom: 0;
+
 }
 
 .resources_container li{
-	font-size: 0.7em;
+	font-size: 0.6em;
 }
 
 .resources_container a{
 	color: #2ba7af;
+
+}
+
+.mobile_photo{
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
 
 }
 
@@ -582,24 +630,24 @@ Begin Tablet Homepage Media Query
 .homepage_donation_button{
 	width: 45%;
 	float: left;
-	margin-left: 3%;
-	margin-top: 1%;
-	margin-bottom: 2%;
+	
 
 }
 
 .homepage_donation_button img{
-	width: 100%;
+	width: 75%;
+	float: right;
 }	
 
 .about_video{
 	width: 50%;
 	float: left;
-	margin-bottom: 1%;
+	
 }
 
 .resources_container{
 	text-align: center;
+
 
 }	
 	
@@ -611,40 +659,91 @@ Begin Tablet Homepage Media Query
 
 }
 
-.search_programs_m{
-	clear: both;
-	width: 92%;
-	margin: 0 auto;
-	background: #e5f5ef;
-}
 
-} /*End Tablet Query Homepage*/
+} 
+
+/*End Tablet Query Homepage*/
 
 /*Begin Desktop Query Homepage*/
 
 @media screen and (min-width: 960px){
 
+header{
+	width: 100%;	
+
+}
+
+.mobile_photo{
+	display: none;
+}
+
 .main_body{
+	
+	width: 100%;
+
+}
+
+.search_programs{
+	width: 47%;
 	float: left;
-	width: 78%;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+
+.search_programs form{
+	width: 81%;
+	float: left;
 }	
 
+.search_programs input{
+	float: left;
+}
+
+.search_programs button{
+	float: left;
+}
+
 .social_media{
-	width: 6%;
-	padding: 0;
+	width: 8%;
+	margin-left: 3%;
+	
 }
 
 .main_navigation{
-	background: #e5f5ef;
-	margin-top: 2%;
+
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 45px;
+	
+
+}
+
+.main_navigation ul{
+	width: 100%;
+	margin: 0;
+}
+
+.main_navigation li{
+	font-size: 2.8em;
+	font-weight: 700;
+	border: none;
+	text-align: right;
 }
 
 .main_navigation br{
 	display: block;
 }	
 
+.main_navigation a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
+}
+
 .main_navigation a:hover{
-	color: #1459cc;
+	color: #2ba7af;
 }
 
 .homepage_featured_container{
@@ -653,24 +752,12 @@ Begin Tablet Homepage Media Query
 }
 
 .featured_box img{
-	width: 60%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	float: right;
-}
-
-.featured_box{
-	background-color: #09282f;
-	background-image: url( ../img/accent_triangle2_long.png );
-	background-repeat: no-repeat;
-	background-size: 40% auto;
-
-	overflow: hidden;
-	display: block;
-	width: 100%;
-	float: left;
-	
 	position: relative;
+
 }
 
 .homepage_donation_button{
@@ -686,99 +773,168 @@ Begin Tablet Homepage Media Query
 	margin-top: 3%;
 }
 
+.featured_box{
+	background-image: url(../img/boy_holdinghand.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
 .featured_box p{
 	display: block;
-	width: 20%;
-	position: absolute;
-	left: 40%;
-	top: 20px;
-	font-size: 0.8em;
-	padding: 2%;
+	width: 27%;
+	font-size: 1em;
+	padding: 1%;
+	margin: 3% 3%;
 }
 
 .homepage_title{
-	position: absolute;
-	left: 2%;
-	bottom: 0;
-	font-size: 2.7em;
-	color: #e5f5ef;
+
+  	font-size: 6.7em;
+  	color: #e5f5ef;
+  	padding-top: 10%;
+  	text-align: left;
+  	margin-left: 3%;
 }
 
 .homepage_facts{
+	clear: both;
 	font-size: 1.1em;
-	border-bottom: 5px solid #c7d5d0;
+	border-bottom: none;
 	background: #e5f5ef;
+	line-height: 1;
+	padding: 3%;
+	margin: 0;
 	
 }
 
 .homepage_facts p{ 
-	font-family: "Montserrat" "Helvetica" "sans-serif";
+	font-family: 'Cabin Sketch', 'san-serif';
 	
 
 }
 
 .resources_container{
 	clear: both;
+	margin: 0;
+	padding-top: 6%;
+	width: 100%;
+
 }
 
+.resources_container ul{
+	margin-left: 3%;
+	padding: 0;
+
+}
+
+.resources_container h3{
+	font-size: 1.8em;
+	padding-bottom: 0;
+	text-align: left;
+	margin-left: 3%;
+}
+
+.resources_list{
+	text-align: left;
+	
+}
 
 .resources_list li{
-	text-align: left;
+	font-size: 1em;
+	padding: 0;
 }
 
+.site_footer{
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
 
-} /*End Desktop Media Query Homepage*/
+li{
+	width: 100%;
+}
+
+footer{
+	width: 100%;
+}
+
+} 
+
+/*End Desktop Media Query Homepage*/
 
 /*Begin Mobile Programs Page*/
 
 
-.flattop_image_container img, .cowboy_image_container img{
+.flattop_image_container, .cowboy_image_container{
 	width: 50%;
 	float: left;
-	margin-bottom: 2%;
+	
 }
 
-.programs_title p, .what_we_teach li, .local_programs p{
-	margin-left: 3%;
-	font-size: 0.9em;
+.flattop_image_container img, .cowboy_image_container img{
+	width: 92%;
+	margin: 2%;
+  	border: 3px solid white;
+}
+
+.programs_title p, .local_programs p{
+	margin: 3% 6%;
+	font-size: 1em;
 	font-weight: 700;
+	padding: 2%;
+	border: 3px solid #ffffff;
+}
+
+.what_we_teach li{
+	font-size: 0.9em;
 }
 
 .what_we_teach h3, .local_programs h3{
 	text-align: center;
-	font-size: 1.3em;
+	clear: both;
+	font-size: 2.3em;
 	margin: 0;
-	padding-top: 2%;
+	padding-top: 3%;
+}
+
+.what_we_teach{
+	clear: both;
+	padding-bottom: 8%;
 }
 
 .what_we_teach ul{
 	margin-top: 2%;
-	padding-left: 3%;
+	padding: 2%;
+	border: 3px solid #000000;
+	list-style: none;
+}
+
+.topics_list{
+	margin: 1% 8%;
+
 }
 
 .programs_list{
 	list-style: none;
 	font-size: 0.8em;
-	padding-left: 3%;
-	padding-bottom: 1%;
-	margin-bottom: 0;
+	padding: 2% 8%;
 
 }
 
 .programs_list a{
-	color: #1459cc;
+	color: #2ba7af;
 }
 
 .local_programs{
-	background: #b1dee2;
-	border-top: 5px solid #c7d5d0;
-	padding-bottom: 2%;
+	background: #082329;
+	padding-bottom: 10%;
+	color: #ffffff;
+	margin: 3%;
+
 }
 
-.local_programs p{
-	font-family: 'Fugaz One' cursive;
-	margin-left: 3%;
 }
+
 
 /*End Mobile Design Programs Page
 Begin Tablet Media Query Programs Page*/
@@ -829,14 +985,14 @@ Begin Desktop Query Programs Page*/
 }
 
 .programs_title span{
-	font-family: 'Fugaz One' cursive; 
+	font-family: 'Cabin Sketch', 'san-serif';
 	font-size: 1.5em;
 	color: #2ba7af;
 
 }
 
 .flattop_image_container img, .cowboy_image_container img{
-	width: 50%;
+	width: 96%;
 	float: left;
 }
 
@@ -846,17 +1002,14 @@ Begin Desktop Query Programs Page*/
 
 .what_we_teach li, .local_programs p{
 	width: 80%;
-	margin-left: 3%;
 	font-size: 0.9em;
 	font-weight: 700;
 	text-align: left;
 }
 
 .main_body_programs{
-	float: left;
-	width: 78%;
+	width: 100%;
 	background: #b1dee2;
-	border-right: 5px solid #c7d5d0;
 
 }
 
@@ -866,9 +1019,10 @@ Begin Desktop Query Programs Page*/
 }
 
 .what_we_teach, .local_programs{
-	width: 50%;
+	width: 100%;
 	float: left;
 	padding-top: 1%;
+	padding-bottom: 3%;
 }
 
 .topics_list{
@@ -884,16 +1038,23 @@ Begin Desktop Query Programs Page*/
 
 .local_programs{
 	border: none;
-	margin-bottom: 1%;
+	margin: 0;
 }
 
 .local_programs p{
-	font-family: 'Montserrat', 'Helvetica', 'sans-serif';
+	font-family: 'Cabin Sketch', 'san-serif';
 }
 
-} /*End Desktop Query Programs Page 
+} 
+
+/*End Desktop Query Programs Page 
 Begin Mobile Stories Page*/
 
+
+.nathan_photo, .sidney_photo, .tavis_photo{
+	margin: 3%;
+
+}	
 
 .nathan_photo img, .sidney_photo img, .tavis_photo img{
 	display: block;
@@ -902,23 +1063,29 @@ Begin Mobile Stories Page*/
 
 .success_stories{
 	background: #09282f;
+	margin: 3%;
 }
 
 .success_stories p{
-	font-family: 'Fugaz One' cursive;
+	font-family: 'Cabin Sketch', 'san-serif';
 	font-size: 1.2em;
-	margin: 0 3% 0 3%;
+	margin: 0 3%;
 	color: #e5f5ef;
-	padding: 3%;
-	text-align: center;
+	padding: 4%;
+	text-align: left;
 }
 
 .stories_container h1{
 	text-decoration: none;
 	margin-top: 0;
 	margin-bottom: 2%;
-	text-align: center;
+	text-align: left;
+	margin-left: 3%;
 	
+}
+
+.nathan_content, .sidney_content, .tavis_content{
+	padding-bottom: 10%;
 }
 
 .nathan_content p, .sidney_content p, .tavis_content p{
@@ -932,12 +1099,12 @@ Begin Mobile Stories Page*/
 }
 
 .stories_fact p{
-	background: #b1dee2;
-	font-family: 'Fugaz One' cursive;
-	font-size: 1.3em;
+	background: #2ba7af;
+	font-family: 'Cabin Sketch', 'san-serif';
+	font-size: 1.7em;
 	text-align: center;
-	margin-bottom: 0;
-	padding: 1%;
+	padding: 4%;
+	margin: 3%;
 
 }
 
@@ -948,17 +1115,32 @@ Begin Mobile Stories Page*/
 }	
 
 .tavis_content{
-	border-bottom: 5px solid #c7d5d0;
-	padding-bottom: 0;
+	margin-bottom: 10%;
+	
 }
 
 /*End Mobile Sucess Stories Page
+
 Begin Tablet Query Success Stories*/
 
 @media screen and (min-width: 680px){
 
 	.success_stories{
 		padding: 1%;
+		width: 63%;
+		margin: 3% auto;
+	}
+
+	.stories_fact p{
+		width: 57%;
+		margin: 0 auto;
+	}
+
+
+
+	.nathan_content, .sidney_content, .tavis_content{
+		width: 70%;
+		margin: 0 auto;
 	}
 
 	.nathan_content p, .sidney_content p, .tavis_content p{
@@ -966,51 +1148,42 @@ Begin Tablet Query Success Stories*/
 
 	}		
 
-} /*End Tablet Media Query for Sucess Stories*/
+} 
+
+/*End Tablet Media Query for Sucess Stories*/
+
 /*Begin Desktop Media Query for Success Stories*/
 
 @media screen and (min-width: 960px){
 
 	.main_body{
-		background: #b1dee2;
-		border-right: 5px solid #c7d5d0;
-		width: 79%;
-
-	}
-
-	header{
-		border-bottom: 5px solid #c7d5d0;
-
-	}
-
-	.nathan_content{
-		background-image: url(../img/accent_triangle2.png);
-		background-repeat: no-repeat;
-		background-size: 10% auto;
-		z-index: 1000;
-		position: relative;
-		transform: rotate(90 deg);
-		right: 0;
-		top: 0;
+	
 		width: 100%;
-		
+
 	}
 
-	.sidney_content{
-		background-image: url(../img/accent_triangle2.png);
-		background-repeat: no-repeat;
-		background-size: 15% auto;
-		left: 0;
-		top: 0;
-		position: relative;
-		width: 100%;
+	.success_stories{
+		width: 98%;
+		margin-top: 0;
+	}
+
+	.success_stories p{
+		padding: 2%;
+		font-size: 1.2em;
+	}
+
+	.stories_fact p{
+		width: 96%;
 
 	}
 
 	.tavis_content{
-		background-image: url(../img/accent_triangle2.png);
-		background-repeat: no-repeat;
+		width: 100%;
+	}
 
+	.tavis_content img{
+		width: 44%;
+		
 	}
 
 	.tavis_content h1{
@@ -1058,8 +1231,13 @@ Begin Tablet Query Success Stories*/
 		margin-top: 0;
 	}
 
+	.sidney_content, .nathan_content{
+		padding-bottom: 0;
+		width: 100%;
+	}
+
 	.sidney_photo{
-		width: 50%;
+		width: 44%;
 		float: right;
 	}
 
@@ -1081,10 +1259,12 @@ Begin Tablet Query Success Stories*/
 
 	.nathan_photo img, .tavis_photo img{
 		float: left;
+		border: 3px solid #ffffff;
 	}
 
 	.sidney_photo img{
-		width: 100%;	
+		width: 100%;
+		border: 3px solid #ffffff;	
 
 	}
 
@@ -1103,8 +1283,6 @@ Begin Tablet Query Success Stories*/
 		text-align: center;
 		margin-bottom: 0;
 		margin-top: 0;
-		border-top: 5px solid #c7d5d0;
-		border-bottom: 5px solid #c7d5d0;
 
 	}
 

@@ -27,7 +27,7 @@ h2 {
   letter-spacing: 12px;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 2.5em; }
+  font-size: 2.2em; }
   @media screen and (min-width: 960px) {
     h2 {
       font-size: 5.5em;
@@ -190,6 +190,9 @@ p {
     .big_date h3 {
       font-size: 1.2em; } }
 
+.title {
+  padding-bottom: 5%; }
+
 .title h2 {
   margin-bottom: 3%;
   font-weight: 500; }
@@ -250,12 +253,13 @@ p {
   .sessions {
     margin-top: 0; } }
 
-.lunch, .sessions, .day1_registration, .demos, .demo_signups, .hangout, .methodical {
-  border-top: 1px solid #D7D7D7; }
+.lunch, .sessions, .day1_registration, .registration, .schedule_day3_registration, .demos, .demo_signups, .gamenight, .hangout, .barleys, .methodical {
+  border-top: 1px solid #D7D7D7;
+  padding-bottom: 8%; }
 
-@media screen and (min-width: 960px) {
-  .speaker_info {
-    padding-bottom: 2%; }
+.speaker_info {
+  padding-bottom: 10%; }
+  @media screen and (min-width: 960px) {
     .speaker_info:after {
       content: "";
       display: table;
@@ -491,6 +495,13 @@ footer {
     .homepage_date h3 {
       font-size: 1.2em; } }
 
+.grok_info {
+  margin-top: 10%; }
+
+.session_info {
+  margin-bottom: 15%;
+  margin-top: 10%; }
+
 @media screen and (min-width: 960px) {
   .grok_info, .session_info {
     width: 46%;
@@ -520,24 +531,29 @@ footer {
   border: 8px solid #000000;
   padding: 4%;
   margin-top: 2%;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  display: block; }
   @media screen and (min-width: 680px) {
     .people_button, .register_button, .schedule_button {
       padding: 1%; } }
   @media screen and (min-width: 960px) {
     .people_button, .register_button, .schedule_button {
       width: 27%;
-      float: left;
-      margin: 1% 1% 6% 1%;
+      display: inline-block;
+      margin: 1%;
       padding-top: 6%;
       padding-bottom: 6%; } }
   .people_button h3, .register_button h3, .schedule_button h3 {
     font-size: 1.2em;
     text-align: center;
     font-weight: 300;
-    letter-spacing: 17px; }
+    letter-spacing: 17px;
+    color: #000000; }
 
-.people_button a, .register_button a, .schedule_button a {
+.buttons {
+  clear: both; }
+
+.buttons a {
   color: #000000;
   text-decoration: none; }
 
@@ -553,17 +569,23 @@ footer {
   background: #FBFA81;
   border: none;
   text-transform: uppercase;
-  padding: 1%; }
+  padding: 1%;
+  font-size: 0.9em; }
 
 .homepage_site_footer {
   background: #D7D7D7; }
 
 .email_signup {
-  clear: both; }
+  clear: both;
+  margin-top: 15%; }
+  @media screen and (min-width: 960px) {
+    .email_signup {
+      margin-top: 5%; } }
   .email_signup h5 {
     text-align: center;
     margin-top: 6%;
-    margin-bottom: 3%; }
+    margin-bottom: 3%;
+    font-size: 0.9em; }
   .email_signup form {
     text-align: center; }
 
@@ -604,13 +626,13 @@ footer {
   text-align: center; }
   .sponsors ul li, .presented_by ul li {
     display: inline-block;
-    width: 19%; }
+    width: 23%; }
 
 .sponsors img, .presented_by img {
   width: 75%; }
   @media screen and (min-width: 960px) {
     .sponsors img, .presented_by img {
-      width: 50%; } }
+      width: 60%; } }
 
 .sponsors h5, .presented_by h5 {
   text-align: center;

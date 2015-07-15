@@ -1,0 +1,958 @@
+$gray: #D7D7D7;
+$orange: #FF5C4E;
+$yellow: #FBFA81;
+$green: #00FFBA;
+$drkgray: #494B4A;
+$black: #000000;
+$white: #ffffff;
+
+$sans: 'Telex', sans-serif;
+
+$midmobile: 370px;
+$tablet: 680px;  
+$desktop: 960px;   
+
+// 'Myriad-Pro', 'Helvetica', 'sans-serif';
+
+@mixin breakpoint($point){
+	@media screen and('min-width:' $point){
+		@content;
+	}
+}
+
+@mixin clearfix {
+  &:after { content: ""; display: table; clear: both; }
+}
+
+@mixin boxes {
+	border: 8px solid #000000;
+	padding: 4%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+
+	@include breakpoint($tablet){
+		padding: 1%;
+	}
+}
+
+body{
+	background: #ffffff;
+	font-family: $sans;
+	
+}
+
+h3, h4, h5, h6{
+	font-weight: 700;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-transform: uppercase;
+
+}
+
+h3{
+	@include breakpoint($desktop){
+		font-size: 1.5em;
+
+	}
+}
+
+h5{
+	@include breakpoint($desktop){
+		font-size: 1.1em;
+	}
+}
+
+h1{
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 40px;
+	text-transform: uppercase;
+	padding-left: 40px;
+
+}
+
+h2{
+	letter-spacing: 12px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 2.2em;
+
+	@include breakpoint($desktop){
+			font-size: 5.5em;
+			margin-bottom: 0;
+			margin-top: 0;
+			font-weight: 300;
+			letter-spacing: 17px;
+		}
+
+}
+
+a{
+	color: $orange;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+p{
+	font-size: 0.8em;
+	line-height: 1.5;
+
+	@include breakpoint($desktop){
+		font-size: 1em;
+	}
+}
+
+.orange{
+	background: $orange;
+}
+
+.yellow{
+	background: $yellow;
+}
+
+.green{
+	background: $green;
+}
+
+.max_width{
+	display: block;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.wrapper{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+.subpage_site_header{
+	width: 100%;
+	border-bottom: 10px solid #000000;
+	padding-bottom: 2%;
+
+	@include breakpoint($desktop){
+		height: 150px;
+		background-image: url(../img/headerbg.jpg);
+		background-repeat: repeat;
+		background-size: 20%;
+		border-bottom: 10px solid #000000;
+		padding-top: 3%;
+		padding-bottom: 3%;
+		position: relative;
+		text-align: center;
+		
+	@include clearfix;
+	}
+
+	.logo a{
+		display: block;
+		width: 33%;
+		margin: 5% auto;
+
+
+		@include clearfix;
+
+		@include breakpoint($tablet){
+		width: 20%;
+		}
+
+		@include breakpoint($desktop){
+			width: 95px;
+			height: 95px;
+		}
+	}
+}
+
+.logo a{
+	@include breakpoint($desktop){
+		width: 35%;
+	}
+}
+
+.subpage_site_header button a{
+	color: $black;
+	text-decoration: none;
+}
+
+.fixed_header_menu{
+
+	display: none;
+
+	@include breakpoint($desktop){
+	display: block; 
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	top: 55px;
+	left: 95px;
+	background: rgba(255, 255, 255, 0.4);
+	border: 5px solid $black;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	transform: rotate(45deg);
+	padding: 0;
+	text-align: center;
+
+	
+	}
+
+}
+
+.fixed_header_menu h5{
+	transform: rotate(-45deg);
+
+}
+
+.fixed_header_menu a{
+	text-align: center;
+	font-weight: 700;
+	
+
+}
+
+
+.event_name{
+	width: 100%;
+
+}
+
+.event_name h1{
+
+	font-size: 2em;
+	text-align: center;
+
+	@include breakpoint($tablet){
+		font-size: 3em;
+	}
+
+	@include breakpoint($desktop){
+		font-size: 7em;
+		
+	}
+
+}
+
+
+.logo{
+
+
+	@include breakpoint($desktop){
+		position: absolute;
+		top: 19%;
+		right: 9%;
+
+	
+		}
+
+	@include clearfix;
+
+	img{
+		width: 100%;
+
+	}
+}
+
+
+.restaurants h5{
+	text-transform: none;
+
+}
+
+.big_date{
+	margin-top: 3%;
+}
+
+.big_date h2{
+		font-size: 0.9em;
+		font-weight: 500;
+		letter-spacing: 5px;
+
+		@include breakpoint($tablet){
+			font-size: 1.5em;
+		}
+		
+
+		@include breakpoint($desktop){
+			font-size: 2em;
+		
+		}
+	}
+
+
+
+.big_date h3{
+		font-size: 0.6em;
+		font-weight: 500;
+		letter-spacing: 5px;
+
+		@include breakpoint($tablet){
+			font-size: 1.1em;
+		}
+
+		@include breakpoint($desktop){
+			font-size: 1.2em;
+			
+		}
+
+	}
+
+.title{
+		padding-bottom: 5%;
+	}
+
+
+.title h2{
+		margin-bottom: 3%;
+		font-weight: 500;
+		
+
+	}
+
+
+
+
+.day_divider{
+	border: 8px solid #000000;
+	padding: 1%;
+	margin-top: 3%;
+
+	@include breakpoint($desktop){
+		background: #ffffff;
+		padding: 2%;
+	}
+	
+	h3{
+		font-size: 1.5em;
+		width: 100%;
+		text-align: left;;
+		margin-top: 0;
+	}	
+
+	h2{
+		font-size: 1em;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-align: left;
+
+	}
+}
+
+.day_divider{
+	@include breakpoint($desktop){
+		@include clearfix;
+	}
+}
+
+.day_divider h3{
+
+	@include breakpoint($desktop){
+		width: 15%;
+		float: right;
+		margin-bottom: 0;
+	}
+}
+
+.day_divider h2{
+
+	@include breakpoint($desktop){
+		width: 40%;
+		float: left;
+		font-size: 1.8em;
+	}
+
+}
+
+.day1_location{ 
+
+	h5{
+	text-transform: none;
+	margin-bottom: 3%;
+	}
+
+}
+
+.date_event{
+	
+	border-top: 1px solid $gray;
+	
+}
+
+.date_event h5{
+	@include breakpoint($desktop){
+		margin-bottom: 0;
+	}
+}
+
+.date_event h3{
+	@include breakpoint($desktop){
+		margin-top: 0;
+	}
+}
+
+.sessions{
+
+
+	@include breakpoint($desktop){
+		margin-top: 0;
+	}
+	
+}
+
+.lunch, .sessions, .day1_registration, .registration, .schedule_day3_registration, .demos, .demo_signups, .gamenight, .hangout, .barleys, .methodical{
+	border-top: 1px solid $gray;
+	padding-bottom: 8%;
+}
+
+.speaker_info{
+
+	padding-bottom: 10%;
+	
+	@include breakpoint($desktop){
+		
+
+		@include clearfix;
+	}
+}
+
+.speaker_info h3 a{
+	color: $black;
+	text-decoration: none;
+}
+
+.speakers img{
+	width: 35%;
+	margin: 0 auto;
+
+	@include breakpoint($tablet){
+		width: 15%;
+		float: left;
+		margin-right: 2%;
+	}
+}
+
+.day1_registration h3{
+	text-align: left;
+}
+
+.gamenight{
+	border-top: 1px solid $gray;
+}
+
+#menu{
+	text-align: center;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 6%;
+	margin-top: 6%;
+
+	@include breakpoint($tablet){
+		width: 40%;
+	}
+
+	@include breakpoint($desktop){
+		width: 30%;
+	}
+ 
+		li{
+			width: 78%;
+			display: block;
+			border: 5px solid $black;
+			padding: 4%;
+			margin: 4%;
+
+			@include breakpoint($tablet){
+				font-size: 0.9em;
+			}
+
+			@include breakpoint($desktop){
+			
+				font-size: 1.1em;
+				
+			}
+			
+	}
+
+		a{
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $black;
+			text-align: center;
+
+		}
+
+}
+
+footer{
+	margin-top: 10%;
+
+	img{
+	width: 7%;
+	margin: 0 auto;
+
+	}
+
+	ul{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	a{
+		display: block;
+		text-align: center;
+
+	}
+
+	li{
+		display: inline-block;
+		font-size: 0.7em;
+		text-align: center;
+
+	}
+}
+
+.registration_instructions{
+	text-align: center;
+	letter-spacing: 3px;
+	margin-bottom: 5%;
+
+}
+
+.registration_form form{
+	text-align: center; 
+	padding-top: 2%;
+	padding-bottom: 6%;
+	border-bottom: 1px solid $gray;
+
+	input{
+		padding: 1%;
+		width: 82%;
+		margin: 1%;
+
+		@include breakpoint($tablet){
+			width: 25%;
+		}
+
+	}
+
+	button{
+		background: $yellow;
+		border: none;
+		padding: 2%;
+		margin-top: 1%;
+		font-weight: 500;
+		text-transform: uppercase;
+
+		@include breakpoint($desktop){
+			font-size: 1em;
+			padding: 1%;
+		}
+	}
+}
+
+
+.registration_form label{
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+.registration_site_footer{
+	width: 100%;
+	height: 220px;
+	background: $gray;
+	padding-top: 4%;
+	margin-top: 7%;
+}
+
+.r{
+		font-size: 0.4em;
+		text-align: center;
+		padding: 3%;
+
+		span{
+			padding: 3%;
+		}
+}
+
+.d{
+		text-align: center;
+
+}
+
+.homepage_site_header{
+	width: 100%;
+	border-bottom: 10px solid #000000;
+	padding-bottom: 4%;
+
+	@include breakpoint($desktop){
+		height: 302px;
+		background-image: url(../img/group.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		border-bottom: 10px solid #000000;
+		padding: 0;
+		position: relative;
+		
+	@include clearfix;
+	}
+
+	.homepage_logo a{
+		display: block;
+		width: 25%;
+		margin: 0 auto;
+
+		@include clearfix;
+
+		@include breakpoint($tablet){
+			width: 20%;
+		}
+		@include breakpoint($desktop){
+			width: 50%;
+			margin-top: 10%;
+		}
+
+	}
+
+}
+
+
+.fixed_header_menu_homepage{
+
+	display: none;
+
+	@include breakpoint($desktop){
+	display: block; 
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	background: rgba(255, 255, 255, 0.4);
+	border: 5px solid $black;
+	padding: 1%;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	text-align: center;
+	transform: rotate(45deg);
+	}
+
+}
+
+.fixed_header_menu_homepage h5{
+	transform: rotate(-45deg);
+}
+
+.fixed_header_menu_homepage a{
+	color: $black;
+	font-weight: 300;
+}
+
+.homepage_event_name{
+	@include clearfix;
+	text-align: center;
+	
+}
+
+.homepage_event_name h1{
+	display: block;
+	font-size: 2em;
+	margin: 0 auto;
+	padding-left: 40px;
+
+	@include breakpoint($desktop){
+		font-size: 7em;
+		margin-left: 0;
+		padding-top: 3%;
+
+	}
+
+}
+
+.homepage_logo{
+	
+	margin: 0;
+
+	@include breakpoint($desktop){
+			width: 185px;
+			height: 185px;
+			margin-top: 2%;
+			position: absolute;
+			right: 4%;
+			top: 3%;
+		}
+
+	@include clearfix;
+
+
+
+	img{
+		width: 100%;
+
+	}
+}	
+
+
+.homepage_date{
+	margin-top: 3%;
+}	
+
+
+
+.homepage_date h2{
+		font-size: 0.9em;
+		text-align: center;
+		letter-spacing: 5px;	
+		
+		@include breakpoint($desktop){
+			font-size: 2em;
+		
+		}
+
+}				
+
+.homepage_date h3{
+		font-size: 0.9em;
+		text-align: center;
+		font-weight: 500;
+		letter-spacing: 5px;
+
+		@include breakpoint($desktop){
+			font-size: 1.2em;
+
+		}
+
+}
+
+.grok_info{
+	margin-top: 10%;
+}
+
+.session_info{
+	margin-bottom: 15%;
+	margin-top: 10%;
+}
+
+.grok_info, .session_info{
+
+	@include breakpoint($desktop){
+		width: 46%;
+		float: left;
+		margin: 2%;
+
+	h3{
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 10px;
+		font-size: 1.1em;
+	}	
+	}
+
+}
+
+.grok_info h3, .session_info h3{
+	margin-top: 6%;
+
+}
+
+.grok_info span, .session_info span{
+	padding: 1%;
+
+
+}
+
+.grok_info, .grok_info h3{
+	@include breakpoint($desktop){
+	text-align: right;
+
+	}
+}
+
+.session_info, .session_info h3{
+	@include breakpoint($desktop){
+	text-align: left;
+	}
+}
+
+.people_button, .register_button, .schedule_button{
+	@include boxes;
+
+	display: block;
+
+	@include breakpoint($desktop){
+		width: 27%;
+		display: inline-block;
+		margin: 1%;
+		padding-top: 6%;
+		padding-bottom: 6%;
+	}
+
+	h3{
+		font-size: 1.2em;
+		text-align: center;
+		font-weight: 300;
+		letter-spacing: 17px;
+		color: #000000;
+	}
+}
+
+.buttons{
+	clear: both;
+}
+
+.buttons a{
+	color: #000000;
+	text-decoration: none;
+}
+
+.fixed_header_menu_homepage a{
+	color: $black;
+	text-decoration: none;
+}
+
+
+
+
+.email_signup{ 
+
+	label{
+
+		text-transform: uppercase;
+	}
+
+	input{
+		padding: 1%;
+	}
+
+
+	button{
+		background: $yellow;
+		border: none;
+		text-transform: uppercase;
+		padding: 1%;
+		font-size: 0.9em;
+	}
+
+}
+
+.homepage_site_footer{
+	background: $gray;
+}
+
+
+
+.email_signup{ 
+	clear: both;
+	margin-top: 15%;
+
+	@include breakpoint($desktop){
+		margin-top: 5%;
+	}
+
+	h5{
+		text-align: center;
+		margin-top: 6%;
+		margin-bottom: 3%;
+		font-size: 0.9em;
+
+	}
+
+	form{
+		text-align: center;
+
+	}
+}
+
+.m_social_media{ 
+	display: none;
+	width: 20%;
+	margin: 0 auto;
+
+	@include clearfix;
+
+	@include breakpoint($desktop){
+		display: none;
+	}
+
+	a{
+		display: block;
+		width: 50%;
+		float: left;
+
+	}
+
+	img{
+		width: 100%;
+
+	}
+}
+
+.m_social_media h3{
+	@include clearfix;
+	text-transform: lowercase;
+	text-align: center;
+
+
+	a{
+		display: block;
+		text-decoration: none;
+	}
+}
+
+.homepage_site_footer{
+	@include breakpoint($desktop){
+	margin-top: 5%;
+	}
+}
+
+.sponsors ul, .presented_by ul{
+	text-align: center;
+
+	li{
+		display: inline-block;
+		width: 23%
+	}
+}
+
+.sponsors img, .presented_by img{
+	width: 75%;
+
+	@include breakpoint($desktop){
+		width: 60%;
+	}
+}
+
+.sponsors h5, .presented_by h5{
+	text-align: center;
+	padding: 2%;
+	font-weight: 300;
+	color: $orange;
+
+
+	@include breakpoint($desktop){
+		font-size: 0.9em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
