@@ -1,0 +1,7 @@
+
+.conquest_screenshots img{
+	display: block;
+	height: 300px;
+	border: 2px solid gray;
+	margin: 2%;
+}
