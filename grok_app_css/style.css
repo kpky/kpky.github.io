@@ -1,6 +1,18 @@
 body{
-	font-family: sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
+
+ul{
+	padding-left: 0;
+	list-style: none;
+	margin-left: 2%;
+}
+
+li{
+	display: inline-block;
+	margin-right: 3%;
+
+}	
 
 .grok_app_screenshots img{
 
