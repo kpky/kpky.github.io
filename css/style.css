@@ -21,6 +21,7 @@ a{
 h1{
 	color: black;
 	margin: 3%;
+	text-align: center;
 }
 
 h4{
@@ -29,32 +30,83 @@ h4{
 }
 
 .navigation{
+	text-align: center;
 	margin: 3%;
 }
 
+.work{
+	margin: 0 auto;
+	width: 75%;
+}
+
 .work img{
-	height: 200px;
+	width: 96%;
 	border: 3px solid gray;
 	margin: 2%;
+	vertical-align: bottom;
 
 }
 
-.conquest, .grok, .grok_app, .ff, .oc_app{
+.work > div{
 	display: inline-block;
+	width: 96%;
 	margin: 2%;
-}
+
+}	
 
 .work li{
 	display: inline-block;
-	width: 50%;
+	width: 48%;
 	text-align: left;
 	margin-left: 2%;
 }
 
-.conquest a, .grok a, .grok_app a, .ff a, .oc_app a{
+.work > div a{
+	display: block;
 	color: gray;
 	text-decoration: none;
 	text-align: left;
+}
+
+.grok_app img, .oc_app img{
+	width: 30%;
+}
+
+@media screen and ( min-width: 680px ){
+
+	.work{
+		width: 50%;
+	}
+	
+	.work > div{
+		width: 96%;
+		margin: 2%;
+	}	
+}
+ 
+@media screen and ( min-width: 960px ){
+
+	.work{
+
+		width: 100%;
+
+	}
+
+	.work > div{
+		width: 27%;
+	}	
+
+	h1{
+		text-align: left;
+
+	}
+
+	.navigation{
+		text-align: left;
+	}
+
+
 
 }
+
 

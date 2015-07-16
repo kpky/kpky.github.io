@@ -27,21 +27,28 @@ h1{
 }
 
 .work img{
-	height: 200px;
+	width: 40%;
 	border: 3px solid gray;
 	margin: 2%;
 
 }
 
-.grok_screenshots img, .grok_app_wireframes{
+.grok_screenshots{
 	display: inline-block;
-	height: 300px;
+	width: 38%;
+	border: 2px solid gray;
+	margin: 3%;
+}
+
+.grok_app_wireframes img{
+	display: inline-block;
+	width: 20%;
 	border: 2px solid gray;
 	margin: 3%;
 }
 
 .grok_responsive_templates img{
 	display: inline-block;
-	height: 400px;
+	width: 40%;
 	margin: 3%;
 }

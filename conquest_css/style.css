@@ -29,25 +29,28 @@ h4{
 	margin: 2%;
 }
 
+.conquest_screenshots, .responsive_templates{
+	width: 50%;
+}
+
 
 .conquest_screenshots img{
 	display: inline-block;
-	height: 300px;
+	width: 100%;
 	border: 2px solid gray;
 	margin: 3%;
 }
 
 .responsive_templates img{
 	display: inline-block;
-	width: 38%;
+	width: 100%;
 	margin: 3%;
 
 }
 
 .conquest_wireframes img{
 	display: inline-block;
-	height: 300px;
-	/*width: 20%;*/
+	width: 20%;
 	border: 2px solid gray;
 	margin: 3%;
 }
