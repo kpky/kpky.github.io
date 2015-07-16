@@ -22,6 +22,7 @@ a{
 h1{
 	color: black;
 	margin: 3%;
+	text-align: center;
 }
 
 h4{
@@ -29,8 +30,17 @@ h4{
 	margin: 2%;
 }
 
+.navigation{
+	text-align: center;
+}
+
+.conquest_work{
+	margin: 0 auto;
+	width: 75%;
+}
+
 .conquest_screenshots, .responsive_templates{
-	width: 50%;
+	width: 96%;
 }
 
 
@@ -48,9 +58,64 @@ h4{
 
 }
 
+.conquest_wireframes{
+	width: 25%;
+}
+
 .conquest_wireframes img{
 	display: inline-block;
-	width: 20%;
+	width: 100%;
 	border: 2px solid gray;
 	margin: 3%;
 }
+
+@media screen and (min-width: 680px){
+
+	.conquest_work{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 960px){
+
+	h1{
+		text-align: left;
+	}
+
+	.navigation{
+		text-align: left;
+	}
+	.conquest_work{
+		width: 94%;
+		margin-left: 3%;	
+	}
+
+	.responsive_templates, .conquest_screenshots{
+	
+		width: 100%;
+
+	}
+
+	.responsive_templates img, .conquest_screenshots img{
+		width: 40%;
+		margin-left: 0;
+		display: inline-block;
+	}
+
+	.conquest_wireframes{
+		width: 100%;
+	}
+
+	.conquest_wireframes img{
+		margin-left: 0;
+		width: 26%;
+	}
+}
+
+
+
+
+
+
+
+
