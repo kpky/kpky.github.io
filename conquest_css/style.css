@@ -1,7 +1,53 @@
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+ul{
+	padding-left: 0;
+	list-style: none;
+	margin-left: 3%;
+}
+
+li{
+	display: inline-block;
+	margin-right: 3%;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+	color: gray;
+}
+
+h1{
+	color: black;
+	margin: 3%;
+}
+
+h4{
+	color: gray;
+	margin: 2%;
+}
+
 
 .conquest_screenshots img{
-	display: block;
+	display: inline-block;
 	height: 300px;
 	border: 2px solid gray;
-	margin: 2%;
+	margin: 3%;
+}
+
+.responsive_templates img{
+	display: inline-block;
+	width: 38%;
+	margin: 3%;
+
+}
+
+.conquest_wireframes img{
+	display: inline-block;
+	height: 300px;
+	/*width: 20%;*/
+	border: 2px solid gray;
+	margin: 3%;
 }

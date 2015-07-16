@@ -1,5 +1,5 @@
 body{
-	font-family: sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 ul{
@@ -31,4 +31,17 @@ h1{
 	border: 3px solid gray;
 	margin: 2%;
 
+}
+
+.grok_screenshots img, .grok_app_wireframes{
+	display: inline-block;
+	height: 300px;
+	border: 2px solid gray;
+	margin: 3%;
+}
+
+.grok_responsive_templates img{
+	display: inline-block;
+	height: 400px;
+	margin: 3%;
 }

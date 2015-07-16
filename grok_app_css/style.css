@@ -14,7 +14,7 @@ li{
 
 }	
 
-.grok_app_screenshots img{
+.grok_app_screenshots img, .grok_app_wireframes img, .grok_responsive_templates img{
 
 	display: inline-block;
 	width: 20%;
@@ -23,7 +23,7 @@ li{
 
 }
 
-header h1{
+h1{
 	margin: 2%;
 
 }
