@@ -6,15 +6,18 @@ h3, h4, h5, h6 {
   font-weight: 700;
   margin-top: 2%;
   margin-bottom: 2%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 @media screen and (min-width: 960px) {
   h3 {
-    font-size: 1.5em; } }
+    font-size: 1.7em;
+    letter-spacing: 4px; } }
 
 @media screen and (min-width: 960px) {
   h5 {
-    font-size: 1.1em; } }
+    font-size: 1.2em;
+    letter-spacing: 2px; } }
 
 h1 {
   margin-top: 0;
@@ -48,16 +51,19 @@ p {
   line-height: 1.5; }
   @media screen and (min-width: 960px) {
     p {
-      font-size: 1em; } }
+      font-size: 1.2em; } }
 
 .orange {
-  background: #FF5C4E; }
+  background: #FF5C4E;
+  padding: 1%; }
 
 .yellow {
-  background: #FBFA81; }
+  background: #FBFA81;
+  padding: 1%; }
 
 .green {
-  background: #00FFBA; }
+  background: #00FFBA;
+  padding: 1%; }
 
 .max_width {
   display: block;
@@ -116,12 +122,13 @@ p {
   display: none; }
   @media screen and (min-width: 960px) {
     .fixed_header_menu {
+      font-family: 'Telex', 'sans-serif';
       display: block;
       width: 75px;
       height: 75px;
       position: absolute;
       top: 55px;
-      left: 95px;
+      right: 180px;
       background: rgba(255, 255, 255, 0.4);
       border: 5px solid #000000;
       text-transform: uppercase;
@@ -129,6 +136,12 @@ p {
       transform: rotate(45deg);
       padding: 0;
       text-align: center; } }
+
+.s {
+  background: #FF5C4E; }
+
+.p {
+  background: #FBFA81; }
 
 .fixed_header_menu h5 {
   transform: rotate(-45deg); }
@@ -153,8 +166,8 @@ p {
 @media screen and (min-width: 960px) {
   .logo {
     position: absolute;
-    top: 19%;
-    right: 9%; } }
+    top: 45px;
+    left: 14%; } }
 .logo:after {
   content: "";
   display: table;
@@ -217,22 +230,26 @@ p {
     text-align: left; }
 
 @media screen and (min-width: 960px) {
-  .day_divider:after {
-    content: "";
-    display: table;
-    clear: both; } }
+  .day_divider {
+    padding: 1%; }
+    .day_divider:after {
+      content: "";
+      display: table;
+      clear: both; } }
 
 @media screen and (min-width: 960px) {
   .day_divider h3 {
-    width: 15%;
+    width: 20%;
     float: right;
-    margin-bottom: 0; } }
+    margin-bottom: 0;
+    padding: 2%; } }
 
 @media screen and (min-width: 960px) {
   .day_divider h2 {
     width: 40%;
     float: left;
-    font-size: 1.8em; } }
+    font-size: 1.8em;
+    padding: 2%; } }
 
 .day1_location h5 {
   text-transform: none;
@@ -247,7 +264,7 @@ p {
 
 @media screen and (min-width: 960px) {
   .date_event h3 {
-    margin-top: 0; } }
+    margin-top: 1%; } }
 
 @media screen and (min-width: 960px) {
   .sessions {
@@ -255,7 +272,7 @@ p {
 
 .lunch, .sessions, .day1_registration, .registration, .schedule_day3_registration, .demos, .demo_signups, .gamenight, .hangout, .barleys, .methodical {
   border-top: 1px solid #D7D7D7;
-  padding-bottom: 8%; }
+  padding-bottom: 6%; }
 
 .speaker_info {
   padding-bottom: 10%; }
@@ -290,7 +307,8 @@ p {
   display: block;
   margin: 0 auto;
   margin-bottom: 6%;
-  margin-top: 6%; }
+  margin-top: 6%;
+  letter-spacing: 4px; }
   @media screen and (min-width: 680px) {
     #menu {
       width: 40%; } }
@@ -351,19 +369,21 @@ footer {
         width: 25%; } }
   .registration_form form button {
     background: #FBFA81;
-    border: none;
-    padding: 2%;
     margin-top: 1%;
     font-weight: 500;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 0.5%;
+    font-size: 0.8em;
+    letter-spacing: 4px;
+    border: 4px solid black;
+    font-family: 'Telex', 'sans-serif'; }
     @media screen and (min-width: 960px) {
       .registration_form form button {
-        font-size: 1em;
-        padding: 1%; } }
+        font-size: 1em; } }
 
 .registration_form label {
   text-transform: uppercase;
-  font-size: 0.7em; }
+  font-size: 0.8em; }
 
 .registration_site_footer {
   width: 100%;
@@ -377,10 +397,14 @@ footer {
   text-align: center;
   padding: 3%; }
   .r span {
-    padding: 3%; }
+    padding: 2%;
+    font-size: 1.5em; }
 
 .d {
   text-align: center; }
+
+.reg {
+  background: #00FFBA; }
 
 .homepage_site_header {
   width: 100%;
@@ -412,8 +436,7 @@ footer {
         width: 20%; } }
     @media screen and (min-width: 960px) {
       .homepage_site_header .homepage_logo a {
-        width: 50%;
-        margin-top: 10%; } }
+        width: 60%; } }
 
 .fixed_header_menu_homepage {
   display: none; }
@@ -423,11 +446,10 @@ footer {
       width: 80px;
       height: 80px;
       position: absolute;
-      top: 20%;
-      left: 10%;
+      top: 57px;
+      right: 12%;
       background: rgba(255, 255, 255, 0.4);
       border: 5px solid #000000;
-      padding: 1%;
       text-transform: uppercase;
       font-size: 0.9em;
       text-align: center;
@@ -456,18 +478,17 @@ footer {
     .homepage_event_name h1 {
       font-size: 7em;
       margin-left: 0;
-      padding-top: 3%; } }
+      padding-top: 4%; } }
 
 .homepage_logo {
   margin: 0; }
   @media screen and (min-width: 960px) {
     .homepage_logo {
-      width: 185px;
+      width: 17%;
       height: 185px;
-      margin-top: 2%;
       position: absolute;
-      right: 4%;
-      top: 3%; } }
+      left: 7%;
+      top: 50px; } }
   .homepage_logo:after {
     content: "";
     display: table;
@@ -550,6 +571,19 @@ footer {
     letter-spacing: 17px;
     color: #000000; }
 
+.people_button, .register_button, .schedule_button {
+  background: white;
+  transition: background-color ease 1s; }
+
+.people_button:hover {
+  background: #FBFA81; }
+
+.register_button:hover {
+  background: #00FFBA; }
+
+.schedule_button:hover {
+  background: #FF5C4E; }
+
 .buttons {
   clear: both; }
 
@@ -562,15 +596,24 @@ footer {
   text-decoration: none; }
 
 .email_signup label {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.8em; }
 .email_signup input {
-  padding: 1%; }
+  padding: 0.75%; }
+  @media screen and (min-width: 960px) {
+    .email_signup input {
+      width: 20%; } }
 .email_signup button {
   background: #FBFA81;
   border: none;
   text-transform: uppercase;
-  padding: 1%;
-  font-size: 0.9em; }
+  padding: 0.5%;
+  font-size: 0.8em;
+  letter-spacing: 4px;
+  border: 4px solid black;
+  font-family: 'Telex', 'sans-serif';
+  margin-left: 1%; }
 
 .homepage_site_footer {
   background: #D7D7D7; }
@@ -585,7 +628,7 @@ footer {
     text-align: center;
     margin-top: 6%;
     margin-bottom: 3%;
-    font-size: 0.9em; }
+    font-size: 1em; }
   .email_signup form {
     text-align: center; }
 

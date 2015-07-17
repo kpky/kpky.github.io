@@ -38,27 +38,32 @@ $desktop: 960px;
 body{
 	background: #ffffff;
 	font-family: $sans;
+
 	
 }
+
 
 h3, h4, h5, h6{
 	font-weight: 700;
 	margin-top: 2%;
 	margin-bottom: 2%;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 
 }
 
 h3{
 	@include breakpoint($desktop){
-		font-size: 1.5em;
+		font-size: 1.7em;
+		letter-spacing: 4px;
 
 	}
 }
 
 h5{
 	@include breakpoint($desktop){
-		font-size: 1.1em;
+		font-size: 1.2em;
+		letter-spacing: 2px;
 	}
 }
 
@@ -101,20 +106,23 @@ p{
 	line-height: 1.5;
 
 	@include breakpoint($desktop){
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 }
 
 .orange{
 	background: $orange;
+	padding: 1%;
 }
 
 .yellow{
 	background: $yellow;
+	padding: 1%;
 }
 
 .green{
 	background: $green;
+	padding: 1%;
 }
 
 .max_width{
@@ -184,12 +192,13 @@ p{
 	display: none;
 
 	@include breakpoint($desktop){
+	font-family: 'Telex', 'sans-serif';
 	display: block; 
 	width: 75px;
 	height: 75px;
 	position: absolute;
 	top: 55px;
-	left: 95px;
+	right: 180px;
 	background: rgba(255, 255, 255, 0.4);
 	border: 5px solid $black;
 	text-transform: uppercase;
@@ -201,6 +210,14 @@ p{
 	
 	}
 
+}
+
+.s{
+	background: $orange;
+}
+
+.p{
+	background: $yellow;
 }
 
 .fixed_header_menu h5{
@@ -243,8 +260,8 @@ p{
 
 	@include breakpoint($desktop){
 		position: absolute;
-		top: 19%;
-		right: 9%;
+		top: 45px;
+		left: 14%;
 
 	
 		}
@@ -345,15 +362,17 @@ p{
 .day_divider{
 	@include breakpoint($desktop){
 		@include clearfix;
+		padding: 1%;
 	}
 }
 
 .day_divider h3{
 
 	@include breakpoint($desktop){
-		width: 15%;
+		width: 20%;
 		float: right;
 		margin-bottom: 0;
+		padding: 2%;
 	}
 }
 
@@ -363,6 +382,7 @@ p{
 		width: 40%;
 		float: left;
 		font-size: 1.8em;
+		padding: 2%;
 	}
 
 }
@@ -390,7 +410,7 @@ p{
 
 .date_event h3{
 	@include breakpoint($desktop){
-		margin-top: 0;
+		margin-top: 1%;
 	}
 }
 
@@ -405,7 +425,7 @@ p{
 
 .lunch, .sessions, .day1_registration, .registration, .schedule_day3_registration, .demos, .demo_signups, .gamenight, .hangout, .barleys, .methodical{
 	border-top: 1px solid $gray;
-	padding-bottom: 8%;
+	padding-bottom: 6%;
 }
 
 .speaker_info{
@@ -450,6 +470,7 @@ p{
 	margin: 0 auto;
 	margin-bottom: 6%;
 	margin-top: 6%;
+	letter-spacing: 4px;
 
 	@include breakpoint($tablet){
 		width: 40%;
@@ -543,15 +564,18 @@ footer{
 
 	button{
 		background: $yellow;
-		border: none;
-		padding: 2%;
 		margin-top: 1%;
 		font-weight: 500;
 		text-transform: uppercase;
+		padding: 0.5%;
+  		font-size: 0.8em;
+  		letter-spacing: 4px;
+  		border: 4px solid black;
+  		font-family: 'Telex', 'sans-serif';
 
 		@include breakpoint($desktop){
 			font-size: 1em;
-			padding: 1%;
+			// padding: 1%;
 		}
 	}
 }
@@ -559,7 +583,7 @@ footer{
 
 .registration_form label{
 	text-transform: uppercase;
-	font-size: 0.7em;
+	font-size: 0.8em;
 }
 
 .registration_site_footer{
@@ -576,13 +600,18 @@ footer{
 		padding: 3%;
 
 		span{
-			padding: 3%;
+			padding: 2%;
+			font-size: 1.5em;
 		}
 }
 
 .d{
 		text-align: center;
 
+}
+
+.reg{
+	background: $green;
 }
 
 .homepage_site_header{
@@ -613,8 +642,8 @@ footer{
 			width: 20%;
 		}
 		@include breakpoint($desktop){
-			width: 50%;
-			margin-top: 10%;
+			width: 60%;
+			
 		}
 
 	}
@@ -631,11 +660,10 @@ footer{
 	width: 80px;
 	height: 80px;
 	position: absolute;
-	top: 20%;
-	left: 10%;
+	top: 57px;
+	right: 12%;
 	background: rgba(255, 255, 255, 0.4);
 	border: 5px solid $black;
-	padding: 1%;
 	text-transform: uppercase;
 	font-size: 0.9em;
 	text-align: center;
@@ -668,7 +696,7 @@ footer{
 	@include breakpoint($desktop){
 		font-size: 7em;
 		margin-left: 0;
-		padding-top: 3%;
+		padding-top: 4%;
 
 	}
 
@@ -679,12 +707,11 @@ footer{
 	margin: 0;
 
 	@include breakpoint($desktop){
-			width: 185px;
+			width: 17%;
 			height: 185px;
-			margin-top: 2%;
 			position: absolute;
-			right: 4%;
-			top: 3%;
+			left: 7%;
+			top: 50px;
 		}
 
 	@include clearfix;
@@ -801,6 +828,24 @@ footer{
 	}
 }
 
+.people_button, .register_button, .schedule_button{
+	background: white;
+	transition: background-color ease 1s;
+}
+
+.people_button:hover{
+	background: $yellow;
+}
+
+.register_button:hover{
+	background: $green;
+}
+
+.schedule_button:hover{
+	background: $orange;
+}
+
+
 .buttons{
 	clear: both;
 }
@@ -823,10 +868,17 @@ footer{
 	label{
 
 		text-transform: uppercase;
+		letter-spacing: 4px;
+		font-size: 0.8em;
 	}
 
 	input{
-		padding: 1%;
+		padding: 0.75%;
+
+		@include breakpoint($desktop){
+			width: 20%; 
+		}
+		
 	}
 
 
@@ -834,9 +886,14 @@ footer{
 		background: $yellow;
 		border: none;
 		text-transform: uppercase;
-		padding: 1%;
-		font-size: 0.9em;
-	}
+		padding: 0.5%;
+  		font-size: 0.8em;
+  		letter-spacing: 4px;
+  		border: 4px solid black;
+  		font-family: 'Telex', 'sans-serif';
+  		margin-left: 1%;
+	}	
+
 
 }
 
@@ -858,7 +915,7 @@ footer{
 		text-align: center;
 		margin-top: 6%;
 		margin-bottom: 3%;
-		font-size: 0.9em;
+		font-size: 1em;
 
 	}
 
@@ -866,6 +923,7 @@ footer{
 		text-align: center;
 
 	}
+
 }
 
 .m_social_media{ 
