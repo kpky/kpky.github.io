@@ -68,7 +68,7 @@ h4{
 	text-align: left;
 }
 
-.grok_app img, .oc_app img{
+.oc_app img{
 	width: 30%;
 }
 
@@ -93,7 +93,8 @@ h4{
 	}
 
 	.work > div{
-		width: 27%;
+		width: 44%;
+		vertical-align: bottom;
 	}	
 
 	h1{
