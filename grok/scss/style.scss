@@ -12,7 +12,6 @@ $midmobile: 370px;
 $tablet: 680px;  
 $desktop: 960px;   
 
-// 'Myriad-Pro', 'Helvetica', 'sans-serif';
 
 @mixin breakpoint($point){
 	@media screen and('min-width:' $point){
@@ -25,7 +24,7 @@ $desktop: 960px;
 }
 
 @mixin boxes {
-	border: 8px solid #000000;
+	border: 9px solid $black;
 	padding: 4%;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -36,7 +35,7 @@ $desktop: 960px;
 }
 
 body{
-	background: #ffffff;
+	background: $white;
 	font-family: $sans;
 
 	
@@ -113,16 +112,23 @@ p{
 .orange{
 	background: $orange;
 	padding: 1%;
+	padding-left: 1.5%;
 }
 
 .yellow{
 	background: $yellow;
 	padding: 1%;
+	padding-left: 1.5%;
 }
 
 .green{
 	background: $green;
 	padding: 1%;
+	padding-left: 1.5%;
+}
+
+#buttons_nav span{
+	padding-left: 6%;
 }
 
 .max_width{
@@ -140,7 +146,7 @@ p{
 
 .subpage_site_header{
 	width: 100%;
-	border-bottom: 10px solid #000000;
+	border-bottom: 10px solid $black;
 	padding-bottom: 2%;
 
 	@include breakpoint($desktop){
@@ -148,7 +154,7 @@ p{
 		background-image: url(../img/headerbg.jpg);
 		background-repeat: repeat;
 		background-size: 20%;
-		border-bottom: 10px solid #000000;
+		border-bottom: 10px solid $black;
 		padding-top: 3%;
 		padding-bottom: 3%;
 		position: relative;
@@ -202,7 +208,7 @@ p{
 	background: rgba(255, 255, 255, 0.4);
 	border: 5px solid $black;
 	text-transform: uppercase;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	transform: rotate(45deg);
 	padding: 0;
 	text-align: center;
@@ -213,10 +219,20 @@ p{
 }
 
 .s{
-	background: $orange;
+	background: $white;
+	transition: background-color ease 0.3s;
 }
 
 .p{
+	background: $white;
+	transition: background-color ease 0.3s;
+}
+
+.s:hover{
+	background: $orange;
+}
+
+.p:hover{
 	background: $yellow;
 }
 
@@ -334,12 +350,12 @@ p{
 
 
 .day_divider{
-	border: 8px solid #000000;
+	border: 8px solid $black;
 	padding: 1%;
 	margin-top: 3%;
 
 	@include breakpoint($desktop){
-		background: #ffffff;
+		background: $white;
 		padding: 2%;
 	}
 	
@@ -357,6 +373,10 @@ p{
 		text-align: left;
 
 	}
+}
+
+.day_divider span{
+	padding: 5%;
 }
 
 .day_divider{
@@ -486,6 +506,9 @@ p{
 			border: 5px solid $black;
 			padding: 4%;
 			margin: 4%;
+			
+			
+			
 
 			@include breakpoint($tablet){
 				font-size: 0.9em;
@@ -497,7 +520,7 @@ p{
 				
 			}
 			
-	}
+		}
 
 		a{
 			text-decoration: none;
@@ -505,9 +528,32 @@ p{
 			color: $black;
 			text-align: center;
 
+
+
 		}
 
 }
+
+.g_fill, .o_fill, .y_fill{
+	background: $white;
+	transition: background-color ease 0.3s;
+
+}
+
+.g_fill:hover{
+	background: $green;
+}
+
+.o_fill:hover{
+	background: $orange;
+}
+
+.y_fill:hover{
+	background: $yellow;
+}
+
+
+
 
 footer{
 	margin-top: 10%;
@@ -563,21 +609,26 @@ footer{
 	}
 
 	button{
-		background: $yellow;
+		background: $white;
 		margin-top: 1%;
 		font-weight: 500;
 		text-transform: uppercase;
 		padding: 0.5%;
   		font-size: 0.8em;
   		letter-spacing: 4px;
-  		border: 4px solid black;
+  		border: 4px solid $black;
   		font-family: 'Telex', 'sans-serif';
+  		transition: background-color ease 0.3s;
 
 		@include breakpoint($desktop){
 			font-size: 1em;
-			// padding: 1%;
+			
 		}
 	}
+}
+
+.registration_form button:hover{
+	background: $yellow;
 }
 
 
@@ -611,12 +662,17 @@ footer{
 }
 
 .reg{
+	background: $white;
+	transition: background-color ease 0.3s;
+}
+
+.reg:hover{
 	background: $green;
 }
 
 .homepage_site_header{
 	width: 100%;
-	border-bottom: 10px solid #000000;
+	border-bottom: 10px solid $black;
 	padding-bottom: 4%;
 
 	@include breakpoint($desktop){
@@ -624,7 +680,7 @@ footer{
 		background-image: url(../img/group.jpg);
 		background-repeat: no-repeat;
 		background-size: 100%;
-		border-bottom: 10px solid #000000;
+		border-bottom: 10px solid $black;
 		padding: 0;
 		position: relative;
 		
@@ -660,12 +716,13 @@ footer{
 	width: 80px;
 	height: 80px;
 	position: absolute;
-	top: 57px;
+	top: 60px;
 	right: 12%;
-	background: rgba(255, 255, 255, 0.4);
-	border: 5px solid $black;
+	background: $white;
+	color: $black;
+	border: 10px solid $black;
 	text-transform: uppercase;
-	font-size: 0.9em;
+	
 	text-align: center;
 	transform: rotate(45deg);
 	}
@@ -674,11 +731,19 @@ footer{
 
 .fixed_header_menu_homepage h5{
 	transform: rotate(-45deg);
+	letter-spacing: 4px;
+	font-family: 'Telex', 'sans-serif';
+	font-size: 0.9em;
 }
 
 .fixed_header_menu_homepage a{
 	color: $black;
 	font-weight: 300;
+}
+
+.fixed_header_menu_homepage:hover{
+	background: $black;
+	color: $white;
 }
 
 .homepage_event_name{
@@ -694,9 +759,9 @@ footer{
 	padding-left: 40px;
 
 	@include breakpoint($desktop){
-		font-size: 7em;
+		font-size: 8em;
 		margin-left: 0;
-		padding-top: 4%;
+		padding-top: 3%;
 
 	}
 
@@ -763,6 +828,9 @@ footer{
 .session_info{
 	margin-bottom: 15%;
 	margin-top: 10%;
+
+
+
 }
 
 .grok_info, .session_info{
@@ -772,12 +840,17 @@ footer{
 		float: left;
 		margin: 2%;
 
-	h3{
-		text-align: center;
-		font-weight: 300;
-		letter-spacing: 10px;
-		font-size: 1.1em;
-	}	
+		h3{
+			text-align: center;
+			font-weight: 300;
+			letter-spacing: 10px;
+			font-size: 1.1em;
+		}
+
+		p{
+			font-size: 1em;
+		}	
+	
 	}
 
 }
@@ -820,17 +893,17 @@ footer{
 	}
 
 	h3{
-		font-size: 1.2em;
+		font-size: 1em;
 		text-align: center;
 		font-weight: 300;
 		letter-spacing: 17px;
-		color: #000000;
+		color: $black;
 	}
 }
 
 .people_button, .register_button, .schedule_button{
 	background: white;
-	transition: background-color ease 1s;
+	transition: background-color ease 0.3s;
 }
 
 .people_button:hover{
@@ -851,7 +924,7 @@ footer{
 }
 
 .buttons a{
-	color: #000000;
+	color: $black;
 	text-decoration: none;
 }
 
@@ -883,7 +956,7 @@ footer{
 
 
 	button{
-		background: $yellow;
+		background: $white;
 		border: none;
 		text-transform: uppercase;
 		padding: 0.5%;
@@ -892,9 +965,14 @@ footer{
   		border: 4px solid black;
   		font-family: 'Telex', 'sans-serif';
   		margin-left: 1%;
+  		transition: background-color ease 0.3s;
 	}	
 
 
+}
+
+.email_signup form button:hover{
+	background-color: $yellow;
 }
 
 .homepage_site_footer{
