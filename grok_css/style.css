@@ -55,10 +55,34 @@ h1{
 	margin: 3%;
 }
 
+.grok_sketches img{
+	width: 96%;
+	margin: 2%;
+
+}
+
+.grok_wireframes img{
+	width: 96%;
+	margin: 2%;
+	vertical-align: top;
+}
+
 @media screen and (min-width: 680px){
 
 	.grok_work{
-		width: 50%;
+		width: 80%;
+	}
+
+	.grok_sketches img{
+	width: 44%;
+	margin: 2%;
+
+	}
+
+	.grok_wireframes img{
+	width: 44%;
+	margin: 2%;
+	vertical-align: top;
 	}
 	
 }
@@ -92,5 +116,17 @@ h1{
 		margin-left: 3%;
 		width: 25%;
 	}
+
+	.grok_sketches img{
+	width: 27%;
+	margin: 2%;
+
+}
+
+.grok_wireframes img{
+	width: 20%;
+	margin: 2%;
+	vertical-align: top;
+}
 
 }
