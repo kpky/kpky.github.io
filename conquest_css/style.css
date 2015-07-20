@@ -11,6 +11,7 @@ ul{
 li{
 	display: inline-block;
 	margin-right: 3%;
+	font-size: 1.2em;
 }
 
 a{
@@ -21,7 +22,6 @@ a{
 
 h1{
 	color: black;
-	margin: 3%;
 	text-align: center;
 }
 
@@ -30,8 +30,13 @@ h4{
 	margin: 2%;
 }
 
+header h1{
+	margin: 3%;
+}
+
 .navigation{
 	text-align: center;
+	margin-bottom: 8%;
 }
 
 .conquest_work{
@@ -60,13 +65,16 @@ h4{
 
 .conquest_wireframes{
 	width: 25%;
+
 }
+
+
 
 .conquest_wireframes img{
 	display: inline-block;
 	width: 100%;
 	border: 2px solid gray;
-	margin: 3%;
+
 }
 
 @media screen and (min-width: 680px){
@@ -87,7 +95,7 @@ h4{
 	}
 	.conquest_work{
 		width: 94%;
-		margin-left: 3%;	
+	
 	}
 
 	.responsive_templates, .conquest_screenshots{
@@ -107,7 +115,6 @@ h4{
 	}
 
 	.conquest_wireframes img{
-		margin-left: 0;
 		width: 26%;
 	}
 }

@@ -11,6 +11,7 @@ li{
 	display: inline-block;
 	margin-right: 3%;
 	color: gray;
+	font-size: 1.2em;
 }
 
 a{
@@ -24,6 +25,10 @@ h1{
 	margin: 3%;
 	text-align: left;
 
+}
+
+p{
+	font-size: 1.2em;
 }	
 
 .navigation{

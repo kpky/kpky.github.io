@@ -23,6 +23,13 @@ h1{
 	text-align: center;
 }
 
+h3{
+	color: black;
+	margin: 3%;
+	text-align: left;
+
+}
+
 .grok_work{
 	width: 75%;
 	margin: 0 auto;
@@ -31,7 +38,35 @@ h1{
 .navigation{
 	margin: 3%;
 	text-align: center;
+	margin-bottom: 8%;
 }
+
+.project_description{
+	margin-bottom: 8%;
+}
+
+.project_description p{
+	margin: 3%;
+
+}
+
+.scope{
+	margin-bottom: 8%;
+}
+
+
+.scope ul{
+	margin: 3%;
+}
+
+.grok_discovery{
+	margin-bottom: 8%;
+}
+
+.grok_discovery p{
+	margin: 3%;
+}
+
 
 .grok_screenshots img{
 	display: inline-block;
@@ -53,6 +88,10 @@ h1{
 	display: inline-block;
 	width: 100%;
 	margin: 3%;
+}
+
+.grok_sketches{
+	margin-bottom: 8%;
 }
 
 .grok_sketches img{
@@ -88,6 +127,14 @@ h1{
 }
 
 @media screen and (min-width: 960px){
+
+	p{
+		font-size: 1.2em;
+	}
+
+	li{
+		font-size: 1.2em;
+	}
 	
 	h1{
 		text-align: left;
