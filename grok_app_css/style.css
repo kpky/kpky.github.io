@@ -14,18 +14,9 @@ li{
 
 }	
 
-.grok_app_screenshots img, .grok_app_wireframes img{
-
-	display: inline-block;
-	width: 20%;
-	margin: 2%;
-	border: 2px solid gray;
-	vertical-align: top;
-
-}
-
 h1{
 	margin: 2%;
+	text-align: center;
 
 }
 
@@ -33,4 +24,68 @@ a{
 	text-decoration: none;
 	color: gray;
 	margin: 2%;
+}
+
+
+.grok_app_screenshots img, .grok_app_wireframes img{
+
+	display: inline-block;
+	width: 44%;
+	margin: 2%;
+	border: 2px solid gray;
+	vertical-align: top;
+
+}
+
+.navigation{
+	text-align: center;
+}
+
+.bottom_navigation{
+	text-align: center;
+}
+
+.grok_app_wireframes{
+	padding-bottom: 10%;
+}
+
+.work{
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+@media screen and (min-width: 960px){
+
+	p, li{
+		font-size: 1.2em;
+	}
+
+	h1{
+		text-align: left;
+	}
+
+	.grok_app_screenshots img, .grok_app_wireframes img{
+
+		width: 20%;
+
+	}
+
+	.navigation{
+		text-align: left;
+	}
+
+	.bottom_navigation{
+		text-align: left;
+
+	}
+
+	.work{
+		width: 100%;
+	}
+
+
+
+
+
 }

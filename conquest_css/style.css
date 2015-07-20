@@ -63,17 +63,14 @@ header h1{
 
 }
 
-.conquest_wireframes{
-	width: 25%;
-
-}
-
 
 
 .conquest_wireframes img{
 	display: inline-block;
-	width: 100%;
+	width: 42%;
 	border: 2px solid gray;
+	vertical-align: top;
+	margin: 3%;
 
 }
 
