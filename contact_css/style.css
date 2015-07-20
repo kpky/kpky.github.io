@@ -1,0 +1,77 @@
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+ul{
+	padding-left: 0;
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+	margin-right: 3%;
+	color: gray;
+}
+
+a{
+
+	text-decoration: none;
+	color: gray;
+}
+
+h1{
+	color: black;
+	margin: 3%;
+	text-align: left;
+
+}	
+
+.navigation{
+	text-align: left;
+	margin: 3%;
+}
+
+.contact_info{
+	margin: 3%;
+	padding-top: 6%;
+	text-align: left;
+}
+
+.contact_info img{
+	width: 6%;
+
+}
+
+.contact_info li{
+	width: 100%;
+	margin-bottom: 3%;
+}
+
+@media screen and (min-width: 680px){
+	.contact_info img{
+		width: 4%;
+	}
+}
+
+@media screen and (min-width: 960px){
+
+	h1{
+		text-align: left;
+
+	}
+
+	.navigation{
+		text-align: left;
+	}
+
+	.contact_info{
+		padding-top: 3%;
+	}
+
+	.contact_info img{
+	width: 3%;
+
+}
+
+
+}

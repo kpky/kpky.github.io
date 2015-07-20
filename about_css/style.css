@@ -1,0 +1,36 @@
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+ul{
+	padding-left: 0;
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+	margin-right: 3%;
+	color: gray;
+}
+
+a{
+
+	text-decoration: none;
+	color: gray;
+}
+
+h1{
+	color: black;
+	margin: 3%;
+	text-align: left;
+
+}	
+
+.navigation{
+	text-align: left;
+	margin: 3%;
+}
+
+.about p{
+	margin: 3%;
+}
