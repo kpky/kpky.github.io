@@ -29,6 +29,7 @@ h1{
 
 p{
 	font-size: 1.2em;
+	line-height: 1.3
 }	
 
 .navigation{
@@ -36,6 +37,11 @@ p{
 	margin: 3%;
 }
 
-.about p{
+.about{
+	width: 75%;
 	margin: 3%;
 }
+
+/*.about p{
+	margin: 3%;
+}*/
