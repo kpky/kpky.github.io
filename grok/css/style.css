@@ -49,6 +49,9 @@ ul {
 p {
   font-size: 0.8em;
   line-height: 1.5; }
+  @media screen and (min-width: 680px) {
+    p {
+      font-size: 1em; } }
   @media screen and (min-width: 960px) {
     p {
       font-size: 1.2em; } }
@@ -73,7 +76,7 @@ p {
 
 .max_width {
   display: block;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .wrapper {
@@ -193,10 +196,11 @@ p {
   text-transform: none; }
 
 .big_date {
-  margin-top: 3%; }
+  margin-top: 3%;
+  margin-bottom: 3%; }
 
 .big_date h2 {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 500;
   letter-spacing: 5px; }
   @media screen and (min-width: 680px) {
@@ -218,33 +222,38 @@ p {
       font-size: 1.2em; } }
 
 .title {
-  padding-bottom: 5%; }
+  padding-bottom: 1%; }
 
 .title h2 {
   margin-bottom: 3%;
   font-weight: 500; }
 
 .day_divider {
-  border: 8px solid #000000;
-  padding: 1%;
+  border-bottom: 8px solid #000000;
   margin-top: 3%; }
   @media screen and (min-width: 960px) {
     .day_divider {
+      border: 8px solid #000000;
       background: #ffffff;
-      padding: 2%; } }
+      padding: 2%;
+      margin-top: 0; } }
   .day_divider h3 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     width: 100%;
     text-align: left;
-    margin-top: 0; }
+    margin-top: 0;
+    padding-bottom: 5%;
+    letter-spacing: 9px; }
   .day_divider h2 {
-    font-size: 1em;
+    font-size: 1.3em;
     margin-top: 0;
     margin-bottom: 0;
-    text-align: left; }
+    text-align: left;
+    padding-bottom: 2%; }
 
-.day_divider span {
-  padding: 5%; }
+@media screen and (min-width: 960px) {
+  .day_divider span {
+    padding: 3%; } }
 
 @media screen and (min-width: 960px) {
   .day_divider {
@@ -256,7 +265,7 @@ p {
 
 @media screen and (min-width: 960px) {
   .day_divider h3 {
-    width: 20%;
+    width: 30%;
     float: right;
     margin-bottom: 0;
     padding: 2%; } }
@@ -287,9 +296,15 @@ p {
   .sessions {
     margin-top: 0; } }
 
+.location {
+  margin-bottom: 5%; }
+
 .lunch, .sessions, .day1_registration, .registration, .schedule_day3_registration, .demos, .demo_signups, .gamenight, .hangout, .barleys, .methodical {
   border-top: 1px solid #D7D7D7;
   padding-bottom: 6%; }
+
+.day1_registration {
+  padding-top: 3%; }
 
 .speaker_info {
   padding-bottom: 10%; }
