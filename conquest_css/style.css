@@ -1,11 +1,12 @@
 body{
 	font-family: 'Josefin Sans', sans-serif;
+	margin: 3%;
 }
 
 ul{
 	padding-left: 0;
 	list-style: none;
-	margin-left: 3%;
+	/*margin-left: 3%;*/
 }
 
 li{
@@ -20,9 +21,10 @@ a{
 	color: gray;
 }
 
-h1{
+header h1{
 	color: black;
 	text-align: center;
+	/*margin-left: 3%;*/
 }
 
 h4{
@@ -30,8 +32,14 @@ h4{
 	margin: 2%;
 }
 
-header h1{
-	margin: 3%;
+header h3{
+	/*margin: 3%;*/
+	text-align: center;
+}
+
+p{
+	font-size: 1.2em; 
+	line-height: 1.3
 }
 
 .navigation{
@@ -53,24 +61,24 @@ header h1{
 	display: inline-block;
 	width: 100%;
 	border: 2px solid gray;
-	margin: 3%;
+	/*margin: 3%;*/
 }
 
 .responsive_templates img{
 	display: inline-block;
 	width: 100%;
-	margin: 3%;
+	/*margin: 3%;*/
 
 }
 
 
 
-.conquest_wireframes img{
+.conquest_wireframes img, .conquest_sketches img{
 	display: inline-block;
-	width: 42%;
+	width: 94%;
 	border: 2px solid gray;
 	vertical-align: top;
-	margin: 3%;
+	margin-right: 3%;
 
 }
 
@@ -87,11 +95,16 @@ header h1{
 		text-align: left;
 	}
 
+	header h1, header h3{
+		text-align: left;
+
+	}	
+
 	.navigation{
 		text-align: left;
 	}
 	.conquest_work{
-		width: 94%;
+		width: 100%;
 	
 	}
 
@@ -108,11 +121,26 @@ header h1{
 	}
 
 	.conquest_wireframes{
+		clear: both;
 		width: 100%;
 	}
 
-	.conquest_wireframes img{
+	.conquest_wireframes img, .conquest_sketches img{
 		width: 26%;
+		margin-bottom: 3%;
+	}
+
+	.conquest_project_description, .conquest_project_scope, .conquest_discovery_pt1, .conquest_discovery_pt2{
+		width: 45%;
+		float: left;
+		margin-right: 3%;
+		margin-bottom: 8%;
+		vertical-align: top;
+
+	}
+
+	.conquest_project_scope{
+		margin-left: 3%;
 	}
 }
 
