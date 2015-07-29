@@ -93,12 +93,13 @@ header{
 
     
         position: absolute;
-        top: 6%;
+        top: 12%;
         left: 0;
         right: 0;
+        line-height: 1;
 
         @include breakpoint($desktop){
-            top: 10%;
+            top: 16%;
         }
     
 
@@ -111,7 +112,7 @@ header{
         text-align: center;
         font-family:'Homemade Apple', 'serif';
         text-transform: none;
-        line-height: 1;
+        line-height: 1.1;
 
         @include breakpoint($mid-mobile){
             font-size: 1.8
@@ -122,7 +123,7 @@ header{
         }
 
         @include breakpoint($desktop){
-            font-size: 2.9em;
+            font-size: 3.4em;
             
             
         }
@@ -212,7 +213,7 @@ header{
 
     display: block;
     width: 33%;
-    margin: 0 auto;
+    margin: 2% auto;
     
     img{
         width: 100%;

@@ -31,11 +31,14 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 2.2em; }
+  @media screen and (min-width: 680px) {
+    h2 {
+      font-size: 3.2em; } }
   @media screen and (min-width: 960px) {
     h2 {
-      font-size: 5.5em;
+      font-size: 5em;
       margin-bottom: 0;
-      margin-top: 0;
+      margin-top: 4%;
       font-weight: 300;
       letter-spacing: 17px; } }
 
@@ -76,44 +79,44 @@ p {
 
 .max_width {
   display: block;
-  max-width: 1300px;
   margin: 0 auto; }
 
 .wrapper {
   display: block;
-  width: 90%;
+  width: 85%;
   margin: 0 auto; }
 
 .subpage_site_header {
   width: 100%;
-  border-bottom: 10px solid #000000;
+  border-bottom: 7px solid #000000;
   padding-bottom: 2%; }
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 680px) {
     .subpage_site_header {
-      height: 150px;
+      height: 140px;
       background-image: url(../img/headerbg.jpg);
       background-repeat: repeat;
-      background-size: 20%;
-      border-bottom: 10px solid #000000;
-      padding-top: 3%;
-      padding-bottom: 3%;
+      background-size: 24%;
+      position: relative; } }
+  @media screen and (min-width: 960px) {
+    .subpage_site_header {
+      height: 188px;
       position: relative;
-      text-align: center; }
+      border-bottom: 7px solid #000000; }
       .subpage_site_header:after {
         content: "";
         display: table;
         clear: both; } }
   .subpage_site_header .logo a {
     display: block;
-    width: 33%;
-    margin: 5% auto; }
+    width: 20%;
+    margin: 0 auto; }
     .subpage_site_header .logo a:after {
       content: "";
       display: table;
       clear: both; }
     @media screen and (min-width: 680px) {
       .subpage_site_header .logo a {
-        width: 20%; } }
+        width: 15%; } }
     @media screen and (min-width: 960px) {
       .subpage_site_header .logo a {
         width: 95px;
@@ -123,28 +126,39 @@ p {
   .logo a {
     width: 35%; } }
 
-.subpage_site_header button a {
+.max_width button a {
   color: #000000;
   text-decoration: none; }
 
 .fixed_header_menu {
-  display: none; }
+  display: block;
+  font-family: 'Telex', 'sans-serif';
+  display: block;
+  width: 38px;
+  height: 38px;
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 3px solid #000000;
+  text-transform: uppercase;
+  font-size: 0.2em;
+  transform: rotate(45deg);
+  padding: 0;
+  z-index: 1000;
+  text-align: center; }
+  @media screen and (min-width: 680px) {
+    .fixed_header_menu {
+      width: 50px;
+      height: 50px;
+      top: 30px;
+      right: 10%;
+      border: 5px solid #000000; } }
   @media screen and (min-width: 960px) {
     .fixed_header_menu {
-      font-family: 'Telex', 'sans-serif';
-      display: block;
-      width: 75px;
-      height: 75px;
-      position: absolute;
-      top: 55px;
-      right: 180px;
-      background: rgba(255, 255, 255, 0.4);
       border: 5px solid #000000;
-      text-transform: uppercase;
-      font-size: 0.8em;
-      transform: rotate(45deg);
-      padding: 0;
-      text-align: center; } }
+      width: 50px;
+      height: 50px; } }
 
 .s {
   background: #ffffff;
@@ -161,21 +175,41 @@ p {
   background: #FBFA81; }
 
 .fixed_header_menu h5 {
-  transform: rotate(-45deg); }
+  transform: rotate(-45deg);
+  font-size: 0.3em; }
+  @media screen and (min-width: 680px) {
+    .fixed_header_menu h5 {
+      padding-left: 4px; } }
 
 .fixed_header_menu a {
   text-align: center;
   font-weight: 700; }
 
+.subpage_site_header img {
+  display: block;
+  margin: 0 auto;
+  width: 70%; }
+  @media screen and (min-width: 680px) {
+    .subpage_site_header img {
+      width: 53%; } }
+  @media screen and (min-width: 960px) {
+    .subpage_site_header img {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      right: 0;
+      width: 500px; } }
+
 .event_name {
   width: 100%; }
 
 .event_name h1 {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center; }
   @media screen and (min-width: 680px) {
     .event_name h1 {
-      font-size: 3em; } }
+      font-size: 4.5em;
+      margin-top: 20px; } }
   @media screen and (min-width: 960px) {
     .event_name h1 {
       font-size: 7em; } }
@@ -196,36 +230,41 @@ p {
   text-transform: none; }
 
 .big_date {
-  margin-top: 3%;
-  margin-bottom: 3%; }
+  margin-bottom: 6%; }
 
 .big_date h2 {
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 500;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  text-align: center; }
   @media screen and (min-width: 680px) {
-    .big_date h2 {
-      font-size: 1.5em; } }
-  @media screen and (min-width: 960px) {
     .big_date h2 {
       font-size: 2em; } }
+  @media screen and (min-width: 960px) {
+    .big_date h2 {
+      font-size: 2em;
+      margin-top: 2%; } }
 
 .big_date h3 {
-  font-size: 0.6em;
+  font-size: 0.9em;
   font-weight: 500;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  text-align: center; }
   @media screen and (min-width: 680px) {
     .big_date h3 {
-      font-size: 1.1em; } }
+      font-size: 1.4em; } }
   @media screen and (min-width: 960px) {
     .big_date h3 {
-      font-size: 1.2em; } }
+      font-size: 1.5em;
+      margin-bottom: 4%;
+      margin-top: 1%; } }
 
 .title {
-  padding-bottom: 1%; }
+  padding-bottom: 1%;
+  margin-top: 4%; }
 
 .title h2 {
-  margin-bottom: 3%;
+  margin-bottom: 0;
   font-weight: 500; }
 
 .day_divider {
@@ -236,14 +275,18 @@ p {
       border: 8px solid #000000;
       background: #ffffff;
       padding: 2%;
-      margin-top: 0; } }
+      margin-top: 4%; } }
   .day_divider h3 {
     font-size: 1.7em;
     width: 100%;
     text-align: left;
-    margin-top: 0;
-    padding-bottom: 5%;
+    margin-top: 5%;
+    padding-bottom: 0;
     letter-spacing: 9px; }
+    @media screen and (min-width: 960px) {
+      .day_divider h3 {
+        padding-bottom: 5%;
+        margin-top: 0; } }
   .day_divider h2 {
     font-size: 1.3em;
     margin-top: 0;
@@ -318,6 +361,9 @@ p {
   color: #000000;
   text-decoration: none; }
 
+.speakers {
+  margin-top: 4%; }
+
 .speakers img {
   width: 35%;
   margin: 0 auto; }
@@ -335,7 +381,7 @@ p {
 
 #menu {
   text-align: center;
-  width: 50%;
+  width: 80%;
   display: block;
   margin: 0 auto;
   margin-bottom: 6%;
@@ -343,10 +389,10 @@ p {
   letter-spacing: 4px; }
   @media screen and (min-width: 680px) {
     #menu {
-      width: 40%; } }
+      width: 60%; } }
   @media screen and (min-width: 960px) {
     #menu {
-      width: 30%; } }
+      width: 40%; } }
   #menu li {
     width: 78%;
     display: block;
@@ -398,7 +444,11 @@ footer {
 .registration_instructions {
   text-align: center;
   letter-spacing: 3px;
-  margin-bottom: 5%; }
+  margin-bottom: 1%;
+  margin-top: 3%; }
+  @media screen and (min-width: 960px) {
+    .registration_instructions h5 {
+      font-size: 0.9em; } }
 
 .registration_form form {
   text-align: center;
@@ -407,7 +457,7 @@ footer {
   border-bottom: 1px solid #D7D7D7; }
   .registration_form form input {
     padding: 1%;
-    width: 82%;
+    width: 75%;
     margin: 1%; }
     @media screen and (min-width: 680px) {
       .registration_form form input {
@@ -417,15 +467,16 @@ footer {
     margin-top: 1%;
     font-weight: 500;
     text-transform: uppercase;
-    padding: 0.5%;
-    font-size: 0.8em;
+    padding: 1%;
+    font-size: 0.6em;
     letter-spacing: 4px;
-    border: 4px solid #000000;
+    border: 3px solid #000000;
     font-family: 'Telex', 'sans-serif';
     transition: background-color ease 0.3s; }
     @media screen and (min-width: 960px) {
       .registration_form form button {
-        font-size: 1em; } }
+        font-size: 1em;
+        padding: 0.5%; } }
 
 .registration_form button:hover {
   background: #FBFA81; }
@@ -436,15 +487,17 @@ footer {
 
 .registration_site_footer {
   width: 100%;
-  height: 220px;
+  height: 175px;
   background: #D7D7D7;
   padding-top: 4%;
   margin-top: 7%; }
 
 .r {
   font-size: 0.4em;
-  text-align: center;
-  padding: 3%; }
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .r {
+      font-size: 0.7em; } }
   .r span {
     padding: 2%;
     font-size: 1.5em; }
@@ -461,7 +514,7 @@ footer {
 
 .homepage_site_header {
   width: 100%;
-  border-bottom: 10px solid #000000;
+  border-bottom: 7px solid #000000;
   padding-bottom: 4%; }
   @media screen and (min-width: 960px) {
     .homepage_site_header {
@@ -478,7 +531,7 @@ footer {
         clear: both; } }
   .homepage_site_header .homepage_logo a {
     display: block;
-    width: 25%;
+    width: 30%;
     margin: 0 auto; }
     .homepage_site_header .homepage_logo a:after {
       content: "";
@@ -531,9 +584,10 @@ footer {
 
 .homepage_event_name h1 {
   display: block;
-  font-size: 2em;
+  font-size: 3em;
   margin: 0 auto;
-  padding-left: 40px; }
+  padding-left: 40px;
+  margin-top: 4%; }
   @media screen and (min-width: 960px) {
     .homepage_event_name h1 {
       font-size: 8em;
@@ -556,16 +610,14 @@ footer {
   .homepage_logo img {
     width: 100%; }
 
-.homepage_date {
-  margin-top: 3%; }
-
 .homepage_date h2 {
-  font-size: 0.9em;
+  font-size: 1.3em;
   text-align: center;
   letter-spacing: 5px; }
   @media screen and (min-width: 960px) {
     .homepage_date h2 {
-      font-size: 2em; } }
+      font-size: 2em;
+      margin-top: 2%; } }
 
 .homepage_date h3 {
   font-size: 0.9em;
@@ -611,7 +663,7 @@ footer {
     text-align: left; } }
 
 .people_button, .register_button, .schedule_button {
-  border: 9px solid #000000;
+  border: 7px solid #000000;
   padding: 4%;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -671,11 +723,13 @@ footer {
   border: none;
   text-transform: uppercase;
   padding: 0.5%;
-  font-size: 0.8em;
-  letter-spacing: 4px;
-  border: 4px solid black;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  border: 3px solid black;
   font-family: 'Telex', 'sans-serif';
+  padding-left: 5px;
   margin-left: 1%;
+  text-align: center;
   transition: background-color ease 0.3s; }
 
 .email_signup form button:hover {

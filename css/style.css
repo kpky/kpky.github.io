@@ -70,7 +70,7 @@ h4{
 }
 
 .oc_app img{
-	width: 30%;
+	width: 96%;
 }
 
 @media screen and ( min-width: 680px ){
@@ -115,7 +115,6 @@ h4{
 		text-align: left;
 	
 	}
-
 
 }
 

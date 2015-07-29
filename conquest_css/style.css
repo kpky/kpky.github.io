@@ -71,14 +71,13 @@ p{
 
 }
 
-
-
 .conquest_wireframes img, .conquest_sketches img{
 	display: inline-block;
 	width: 94%;
 	border: 2px solid gray;
 	vertical-align: top;
-	margin-right: 3%;
+	margin-bottom: 3%;
+
 
 }
 

@@ -47,6 +47,12 @@ header, footer{
 	padding-bottom: 10%;
 }
 
+.grok_templates img{
+	width: 29%;
+	margin-left: 3%;
+
+}
+
 .navigation{
 	margin: 3%;
 	text-align: left;
