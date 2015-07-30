@@ -25,6 +25,7 @@ h1{
 	color: black;
 	margin: 3%;
 	text-align: left;
+	font-size: 3em;
 
 }
 
@@ -43,6 +44,4 @@ p{
 	margin: 3%;
 }
 
-/*.about p{
-	margin: 3%;
-}*/
+

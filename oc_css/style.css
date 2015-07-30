@@ -53,4 +53,8 @@ a{
 	.grok_app_screenshots img{
 		width: 18%;
 	}
+
+	h1{
+		font-size: 3em;
+	}
 }
