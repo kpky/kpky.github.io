@@ -55,6 +55,9 @@ header {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (min-width: 680px) {
+    header {
+      margin-top: 65px; } }
 
 .castle img {
   display: block;
@@ -71,76 +74,106 @@ header {
     .slogan {
       top: 16%; } }
   .slogan h1 {
-    color: white;
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    font-size: 1.3em;
-    text-align: center;
-    font-family: 'Homemade Apple', 'serif';
-    text-transform: none;
-    line-height: 1.1; }
+    display: none; }
     @media screen and (min-width: 500px) {
       .slogan h1 {
-        font-size: 1.8; } }
+        display: block;
+        color: white;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        font-size: 1.1em;
+        text-align: center;
+        font-family: 'Homemade Apple', 'serif';
+        text-transform: none;
+        line-height: 1.3; } }
+    @media screen and (min-width: 500px) {
+      .slogan h1 {
+        font-size: 1.7em; } }
     @media screen and (min-width: 680px) {
       .slogan h1 {
-        font-size: 2em; } }
+        font-size: 2.4em; } }
     @media screen and (min-width: 960px) {
       .slogan h1 {
         font-size: 3.4em; } }
 
-.primary_navigation {
-  margin-bottom: 0;
-  margin-top: 0; }
-  @media screen and (min-width: 960px) {
-    .primary_navigation {
-      margin-top: 5%; } }
-  .primary_navigation ul {
+.primary_navigation_m {
+  display: none; }
+  @media screen and (min-width: 680px) {
+    .primary_navigation_m {
+      display: block;
+      margin-bottom: 0;
+      margin-top: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      width: 100%;
+      background: #ffffff;
+      padding-top: 0;
+      padding-bottom: 0; } }
+  @media screen and (min-width: 680px) and (min-width: 960px) {
+    .primary_navigation_m {
+      padding-top: 1.5%;
+      padding-bottom: 1.5%; } }
+
+  .primary_navigation_m ul {
     display: block;
-    margin: 3% auto;
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
-    width: 50%; }
+    width: 100%; }
     @media screen and (min-width: 500px) {
-      .primary_navigation ul {
-        width: 30%; } }
+      .primary_navigation_m ul {
+        width: 100%; } }
     @media screen and (min-width: 960px) {
-      .primary_navigation ul {
+      .primary_navigation_m ul {
         width: 100%;
         margin: 0 auto; } }
-    .primary_navigation ul li {
-      padding: 1.5%; }
+    .primary_navigation_m ul li {
+      display: inline-block;
+      padding: 0.5%;
+      width: 23%; }
       @media screen and (min-width: 960px) {
-        .primary_navigation ul li {
-          padding: 0.5%; } }
-    .primary_navigation ul a {
-      display: block;
+        .primary_navigation_m ul li {
+          padding: 0.5%;
+          width: 15%;
+          text-align: center; } }
+    .primary_navigation_m ul a {
+      display: inline-block;
       text-decoration: none;
       color: #8a2728;
-      border: 2px solid #8a2728;
-      padding: 0.2em 0.5em; }
+      font-size: 0.5em;
+      padding: 0.3em 0.5em; }
       @media screen and (min-width: 680px) {
-        .primary_navigation ul a {
-          font-size: 1.1em; } }
+        .primary_navigation_m ul a {
+          font-size: 1em; } }
+      @media screen and (min-width: 960px) {
+        .primary_navigation_m ul a {
+          font-size: 0.9em;
+          border: 1px solid #8a2728;
+          width: 125px; } }
 
-.primary_navigation a:hover {
+.primary_navigation_m a:hover {
   color: #ffffff;
   background: #000000; }
 
 @media screen and (min-width: 960px) {
-  .primary_navigation li {
+  .primary_navigation_m li {
     display: inline-block; } }
 
 @media screen and (min-width: 960px) {
-  .primary_navigation {
-    margin-top: 3%;
+  .primary_navigation_m {
     margin-bottom: 2%; } }
 
 .logo {
   display: block;
-  width: 33%;
+  width: 50%;
   margin: 2% auto; }
+  @media screen and (min-width: 500px) {
+    .logo {
+      width: 33%; } }
   .logo img {
     width: 100%; }
 
@@ -148,37 +181,41 @@ header {
   width: 94%;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 15%; }
+  padding-bottom: 5%;
+  padding-top: 5%; }
   .homepage_buttons:after {
     content: "";
     display: table;
     clear: both; }
   @media screen and (min-width: 960px) {
     .homepage_buttons {
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      padding-top: 1%; } }
   .homepage_buttons a {
     color: #ffffff;
     background: #000000;
     text-decoration: none;
     vertical-align: top;
-    display: block;
+    display: inline-block;
     border: 2px solid #96915b;
-    width: 48%;
-    margin: 0 auto 1em auto;
+    width: 40%;
+    margin: 0 0.5em 1em auto;
     padding-top: 0.7em;
     padding-right: 1%;
     padding-left: 1%;
-    height: 85px;
-    font-size: 0.9em;
+    height: 75px;
+    font-size: 0.8em;
     text-align: center;
     font-family: 'Homemade Apple', 'serif'; }
     @media screen and (min-width: 500px) {
       .homepage_buttons a {
         width: 28%;
-        font-size: 1.1em; } }
+        font-size: 1em;
+        height: 90px; } }
     @media screen and (min-width: 680px) {
       .homepage_buttons a {
-        font-size: 1.2em; } }
+        font-size: 1.2em;
+        height: 100px; } }
     @media screen and (min-width: 960px) {
       .homepage_buttons a {
         color: #000000;
@@ -235,13 +272,13 @@ header {
 
 .about_sword {
   display: block;
-  width: 10%;
+  width: 7%;
   margin: 2% auto; }
   @media screen and (min-width: 960px) {
     .about_sword {
-      width: 6%;
+      width: 5%;
       position: absolute;
-      bottom: 87%;
+      bottom: 88%;
       left: 2%; } }
 
 .about_article {
@@ -312,8 +349,8 @@ header {
 
 .tr_photos img {
   display: block;
-  width: 94%;
-  margin: 2% 3%;
+  width: 87%;
+  margin: 2% 6%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
   @media screen and (min-width: 680px) {
@@ -351,14 +388,14 @@ header {
 
 .tr_sword {
   display: block;
-  width: 10%;
+  width: 7%;
   margin: 2% auto; }
   @media screen and (min-width: 960px) {
     .tr_sword {
       position: absolute;
       top: 0;
       left: 2%;
-      width: 6%;
+      width: 5%;
       margin-top: 2.2em; } }
 
 .tastingroom_title h3 {
@@ -375,7 +412,7 @@ header {
 .tastingroom_title h6 {
   text-align: center;
   margin-bottom: 0;
-  font-size: 1em;
+  font-size: 0.9em;
   margin: 3%; }
   @media screen and (min-width: 680px) {
     .tastingroom_title h6 {
@@ -385,7 +422,6 @@ header {
       display: none; } }
 
 .tastingroom_divider {
-  text-align: center;
   padding-bottom: 15%; }
   .tastingroom_divider:after {
     content: "";
@@ -403,25 +439,55 @@ header {
       .tastingroom_divider li {
         font-size: 1em; } }
 
+.tastingroom_divider ul {
+  text-align: left; }
+
 .on_tap, .upcoming_brews {
   display: block;
-  width: 44%;
-  float: left;
-  padding: 3%; }
+  width: 65%;
+  margin: 2% auto;
+  background-color: #cccccc;
+  padding: 5%; }
+  @media screen and (min-width: 680px) {
+    .on_tap, .upcoming_brews {
+      width: 35%;
+      display: inline-block;
+      margin: 2%;
+      vertical-align: top;
+      height: 250px; } }
   @media screen and (min-width: 960px) {
     .on_tap, .upcoming_brews {
-      width: 33.333%;
+      width: 22.333%;
       float: left;
-      padding: 0; } }
+      padding: 0;
+      margin-left: 2%;
+      padding: 3%;
+      padding-top: 1%; } }
 
 .upcoming_brews ul {
   display: block;
   margin: 0 auto; }
 
-@media screen and (min-width: 960px) {
-  .hours {
-    width: 33.333%;
-    float: left; } }
+.hours {
+  display: block;
+  width: 65%;
+  margin: 2% auto;
+  background-color: #cccccc;
+  padding: 5%; }
+  @media screen and (min-width: 680px) {
+    .hours {
+      width: 35%;
+      display: inline-block;
+      margin: 2%;
+      vertical-align: top;
+      height: 250px; } }
+  @media screen and (min-width: 960px) {
+    .hours {
+      width: 22.333%;
+      float: left;
+      margin-left: 4%;
+      padding: 3%;
+      padding-top: 1%; } }
 
 .on_tap h3, .upcoming_brews h3, .hours h3 {
   font-family: 'Homemade Apple', 'serif';
@@ -436,13 +502,13 @@ header {
 
 .brewers_sword {
   display: block;
-  width: 10%;
+  width: 7%;
   margin: 2% auto; }
   @media screen and (min-width: 960px) {
     .brewers_sword {
-      width: 6%;
+      width: 5%;
       position: absolute;
-      top: -26%;
+      top: -35%;
       left: 2%; } }
 
 @media screen and (min-width: 960px) {
@@ -559,21 +625,22 @@ header {
 
 .beers_sword {
   display: block;
-  width: 10%;
+  width: 7%;
   margin: 2% auto; }
   @media screen and (min-width: 960px) {
     .beers_sword {
-      width: 6%;
+      width: 5%;
       position: absolute;
-      top: -30%;
+      top: -37%;
       left: 2%; } }
 
 .beers_title ul {
-  padding-bottom: 10%; }
+  padding-bottom: 5%;
+  cursor: pointer; }
   @media screen and (min-width: 680px) {
     .beers_title ul {
       width: 93%;
-      margin: 7% auto;
+      margin: 0 auto;
       text-align: center; } }
   @media screen and (min-width: 960px) {
     .beers_title ul {
@@ -585,7 +652,8 @@ header {
 .beers_title li {
   text-transform: uppercase;
   text-align: center;
-  font-size: 1em; }
+  font-size: 1em;
+  cursor: pointer; }
   @media screen and (min-width: 680px) {
     .beers_title li {
       font-size: 0.9em;
@@ -599,20 +667,23 @@ header {
 .hover {
   display: none; }
   @media screen and (min-width: 680px) {
-    .hover:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .hover ul {
-      padding: 2%; }
-    .hover li {
-      display: block;
-      width: 175px;
-      font-size: 0.8em;
-      padding: 3%;
-      color: #ffffff;
-      background: #8a2728;
-      text-align: left; } }
+    .hover {
+      cursor: pointer; }
+      .hover:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .hover ul {
+        padding: 2%; }
+      .hover li {
+        display: block;
+        width: 175px;
+        font-size: 0.8em;
+        padding: 7%;
+        color: #ffffff;
+        background: #8a2728;
+        text-align: left;
+        cursor: pointer; } }
 
 @media screen and (min-width: 680px) {
   .beer_types > li:hover ul {
@@ -648,25 +719,27 @@ header {
 
 .beers_img img {
   display: block;
-  width: 37%;
-  float: left;
-  margin-left: 3%;
+  width: 87%;
+  margin: 0 auto;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
   @media screen and (min-width: 960px) {
     .beers_img img {
-      width: 100%; } }
+      width: 100%;
+      float: left;
+      margin-left: 3%; } }
 
 .beer_details {
   display: block;
-  width: 54%;
-  float: left;
+  width: 87%;
+  margin: 0 auto;
   padding-left: 3%;
   padding-right: 3%; }
   @media screen and (min-width: 960px) {
     .beer_details {
       width: 29%;
-      margin-top: 1.2%; } }
+      margin-top: 1.2%;
+      float: left; } }
   .beer_details h3 {
     font-size: 0.8em;
     margin-top: 0; }
@@ -679,7 +752,7 @@ header {
     text-transform: none; }
     @media screen and (min-width: 680px) {
       .beer_details h1 {
-        font-size: 1.5em; } }
+        font-size: 1.7em; } }
     @media screen and (min-width: 960px) {
       .beer_details h1 {
         font-size: 1.9em;
@@ -693,19 +766,22 @@ header {
       .beer_details li {
         font-size: 1.3em; } }
 
-@media screen and (min-width: 960px) {
-  .beer_article {
-    width: 25%;
-    float: left; }
-    .beer_article:after {
-      content: "";
-      display: table;
-      clear: both; } }
+.beer_article {
+  width: 87%;
+  margin: 0 auto; }
+  @media screen and (min-width: 960px) {
+    .beer_article {
+      width: 25%;
+      float: left; }
+      .beer_article:after {
+        content: "";
+        display: table;
+        clear: both; } }
 
 .beer_article article {
   clear: both;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 0;
+  margin-right: 0;
   padding-top: 3%;
   padding-bottom: 0;
   font-size: 0.9em; }
@@ -716,7 +792,9 @@ header {
     .beer_article article {
       padding: 4%;
       margin: 0;
-      width: 100%; } }
+      width: 100%;
+      margin-left: 3%;
+      margin-right: 3%; } }
 
 .find_our_beer {
   padding-bottom: 15%; }
@@ -757,13 +835,13 @@ header {
 
 .find_sword {
   display: block;
-  width: 10%;
+  width: 7%;
   margin: 2% auto; }
   @media screen and (min-width: 960px) {
     .find_sword {
-      width: 6%;
+      width: 5%;
       position: absolute;
-      bottom: -42%;
+      bottom: -50%;
       left: 2%; } }
 
 .find_description {
@@ -821,13 +899,13 @@ header {
 
 .events_sword {
   display: block;
-  width: 10%;
+  width: 7%;
   margin: 2% auto; }
   @media screen and (min-width: 960px) {
     .events_sword {
-      width: 6%;
+      width: 5%;
       position: absolute;
-      bottom: -46%;
+      bottom: -54%;
       left: 2%; } }
 
 .twitter_title {
@@ -908,12 +986,12 @@ header {
 
 .balanced_brews img {
   display: block;
-  width: 45%;
-  float: left;
-  margin-left: 3%;
+  width: 87%;
+  margin: 0 auto;
   border: solid 4px #000000; }
   @media screen and (min-width: 960px) {
     .balanced_brews img {
+      float: left;
       width: 35%;
       margin-left: 7%;
       margin-top: 2%; } }
@@ -931,13 +1009,15 @@ header {
 
 .yoga_info {
   display: block;
-  width: 44%;
-  float: left;
-  padding: 3%; }
+  width: 87%;
+  padding: 3%;
+  text-align: center; }
   @media screen and (min-width: 960px) {
     .yoga_info {
       width: 50%;
-      padding: 0; } }
+      padding: 0;
+      float: left;
+      text-align: left; } }
   .yoga_info h5 {
     font-size: 1.1em;
     margin-top: 0;
@@ -986,11 +1066,11 @@ header {
 
 .contact_sword {
   display: block;
-  width: 10%;
+  width: 7%;
   margin: 2% auto; }
   @media screen and (min-width: 960px) {
     .contact_sword {
-      width: 6%;
+      width: 5%;
       position: absolute;
       bottom: -45%;
       left: 2%; } }
@@ -1132,7 +1212,7 @@ textarea {
     display: block;
     margin: 0 auto;
     text-align: center;
-    width: 50%; }
+    width: 60%; }
     @media screen and (min-width: 680px) {
       .secondary_navigation ul {
         width: 30%; } }
@@ -1145,7 +1225,7 @@ textarea {
       text-transform: uppercase;
       display: block;
       padding: 0.2em 0.5em;
-      border: 2px solid #8a2728;
+      border: 1px solid #8a2728;
       font-size: 1.1em; }
 
 .secondary_navigation li {

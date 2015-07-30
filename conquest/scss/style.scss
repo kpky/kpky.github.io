@@ -1,6 +1,10 @@
 $gold: #96915b;
 $maroon: #8a2728;
+$white: #ffffff;
+$black: #000000;
+$gray: #cccccc;
 
+$mobile: 365px;
 $mid-mobile: 500px;
 $tablet: 680px;  
 $desktop: 960px;
@@ -78,8 +82,13 @@ h1, h2, h3, h4, h5, h6{
 header{
     width: 100%;
     position: relative;
-
     @include clearfix;
+
+    @include breakpoint($tablet){
+    margin-top: 65px;
+}
+
+   
 }
 
 .castle img{
@@ -104,22 +113,27 @@ header{
     
 
     h1{
+        display: none;
+
+        @include breakpoint($mid-mobile){
+        display: block;
         color: white;
         display: block;
         margin: 0 auto;
         width: 90%;
-        font-size: 1.3em;
+        font-size: 1.1em;
         text-align: center;
         font-family:'Homemade Apple', 'serif';
         text-transform: none;
-        line-height: 1.1;
+        line-height: 1.3;
+        }
 
         @include breakpoint($mid-mobile){
-            font-size: 1.8
+            font-size: 1.7em;
         }
 
         @include breakpoint($tablet){
-            font-size: 2em;
+            font-size: 2.4em;
         }
 
         @include breakpoint($desktop){
@@ -130,25 +144,41 @@ header{
     }
 }
 
-.primary_navigation{
+.primary_navigation_m{
+        display: none;
+
+
+        @include breakpoint($tablet){
+        display: block;    
         margin-bottom: 0;
         margin-top: 0; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        width: 100%;
+        background: $white;
+        padding-top: 0;
+        padding-bottom: 0;
 
         @include breakpoint($desktop){
-            margin-top: 5%;
+            padding-top: 1.5%;
+            padding-bottom: 1.5%;
         }
-
-
+    } 
 
         ul{
             display: block;
-            margin: 3% auto;
+            margin: 0 auto;
             text-align: center;
             text-transform: uppercase;
-            width: 50%;
+            width: 100%;
+
+
 
             @include breakpoint($mid-mobile){
-                width: 30%;
+                width: 100%;
             }
 
             @include breakpoint($desktop){
@@ -157,36 +187,47 @@ header{
             }
 
             li{ 
-                padding: 1.5%;
+                display: inline-block;
+                padding: 0.5%;
+                width: 23%;
+                
                 @include breakpoint($desktop){
                 padding: 0.5%;
+                width: 15%;
+                text-align: center;
                 }
             }
 
             a{
-                display: block;
+                display: inline-block;
                 text-decoration: none;
                 color: $maroon;
-                border: 2px solid $maroon;
-                padding: 0.2em 0.5em;
-              
+                font-size: 0.5em;
+                
+                padding: 0.3em 0.5em;
 
-                  @include breakpoint($tablet){
-                     font-size: 1.1em;
+                @include breakpoint($tablet){
+                font-size: 1em;
+              
+                }
+                  @include breakpoint($desktop){
+                     font-size: 0.9em;
+                     border: 1px solid $maroon;
+                     width: 125px;
             }
         }
     }
 }
 
 
-.primary_navigation a:hover{
+.primary_navigation_m a:hover{
     color: #ffffff;
     background: #000000;
 
 
 }
 
-.primary_navigation li{
+.primary_navigation_m li{
 
         // width: 50%;
         // margin: 0 auto;
@@ -198,10 +239,9 @@ header{
     
 }
 
-.primary_navigation{
+.primary_navigation_m{
 
     @include breakpoint($desktop){
-        margin-top: 3%;
         margin-bottom: 2%;
     
     }
@@ -212,8 +252,14 @@ header{
 .logo{
 
     display: block;
-    width: 33%;
+    width: 50%;
     margin: 2% auto;
+
+    @include breakpoint($mid-mobile){
+    width: 33%;
+   
+
+}
     
     img{
         width: 100%;
@@ -228,10 +274,12 @@ header{
     width: 94%;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
 
     @include breakpoint($desktop){
         padding-bottom: 0;
+        padding-top: 1%;
     }
 
     a{
@@ -239,26 +287,30 @@ header{
         background: #000000;
         text-decoration: none;
         vertical-align: top;
-        display: block;
+        display: inline-block;
         border: 2px solid $gold;
-        width: 48%;
-        margin: 0 auto 1em auto;
+        width: 40%;
+        margin: 0 0.5em 1em auto;
         padding-top: 0.7em;
         padding-right: 1%;
         padding-left: 1%;
-        height: 85px;
-        font-size: 0.9em;
+        height: 75px;
+        font-size: 0.8em;
         text-align: center;
         font-family:'Homemade Apple', 'serif';
 
         @include breakpoint($mid-mobile){
             width: 28%;
-            font-size: 1.1em;
+            font-size: 1em;
+            height: 90px;
+
         }
 
         @include breakpoint($tablet){
             
             font-size: 1.2em;
+            height: 100px;
+
         }
 
         @include breakpoint($desktop){
@@ -330,13 +382,13 @@ header{
 
 .about_sword{
     display: block;
-    width: 10%;
+    width: 7%;
     margin: 2% auto;
 
     @include breakpoint($desktop){
-    width: 6%;    
+    width: 5%;    
     position: absolute;
-    bottom: 87%;
+    bottom: 88%;
     left: 2%;
 
     }
@@ -439,8 +491,8 @@ header{
 
 .tr_photos img{
     display: block;
-    width: 94%;
-    margin: 2% 3%;
+    width: 87%;
+    margin: 2% 6%;
     -webkit-filter: grayscale(100%); filter: grayscale(100%);
 
       @include breakpoint($tablet){
@@ -483,14 +535,14 @@ header{
 
 .tr_sword{
     display: block;
-    width: 10%;
+    width: 7%;
     margin: 2% auto;
 
     @include breakpoint($desktop){
         position: absolute;
         top: 0;
         left: 2%;
-        width: 6%;
+        width: 5%;
         margin-top: 2.2em;
     }
 }
@@ -514,7 +566,7 @@ header{
 .tastingroom_title h6{
     text-align: center;
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 3%;
 
     @include breakpoint($tablet){
@@ -529,7 +581,6 @@ header{
 
 .tastingroom_divider{
     @include clearfix;
-    text-align: center;
     padding-bottom: 15%;
 
     @include breakpoint($desktop){
@@ -550,16 +601,32 @@ header{
     }
 }
 
+.tastingroom_divider ul{
+    text-align: left;
+}
+
 .on_tap, .upcoming_brews{
     display: block;
-    width: 44%;
-    float: left;
-    padding: 3%;
+    width: 65%;
+    margin: 2% auto;
+    background-color: $gray;
+    padding: 5%;
+
+    @include breakpoint($tablet){
+        width: 35%;
+        display: inline-block;
+        margin: 2%;
+        vertical-align: top;
+        height: 250px;
+    }
 
     @include breakpoint($desktop){
-        width: 33.333%;
+        width: 22.333%;
         float: left;
         padding: 0;
+        margin-left: 2%;
+        padding: 3%;
+        padding-top: 1%;
     }
 }
 
@@ -569,9 +636,26 @@ header{
 }
 
 .hours{
+
+    display: block;
+    width: 65%;
+    margin: 2% auto;
+    background-color: $gray;
+    padding: 5%;
+
+    @include breakpoint($tablet){
+        width: 35%;
+        display: inline-block;
+        margin: 2%;
+        vertical-align: top;
+        height: 250px;
+    }
     @include breakpoint($desktop){
-        width: 33.333%;
+        width: 22.333%;
         float: left;
+        margin-left: 4%;
+        padding: 3%;
+        padding-top: 1%;
     }
 }
 
@@ -589,13 +673,13 @@ header{
 
 .brewers_sword{
     display: block;
-    width: 10%;
+    width: 7%;
     margin: 2% auto;
 
     @include breakpoint($desktop){
-    width: 6%;    
+    width: 5%;    
     position: absolute;
-    top: -26%;
+    top: -35%;
     left: 2%;
 
     }
@@ -746,24 +830,25 @@ header{
 
 .beers_sword{
     display: block;
-    width: 10%;
+    width: 7%;
     margin: 2% auto;
 
     @include breakpoint($desktop){
-    width: 6%;    
+    width: 5%;    
     position: absolute;
-    top: -30%;
+    top: -37%;
     left: 2%;
 
     }
 }
 
 .beers_title ul{
-        padding-bottom: 10%;
+        padding-bottom: 5%;
+        cursor: pointer;
 
       @include breakpoint($tablet){
         width: 93%;
-        margin: 7% auto; 
+        margin: 0 auto; 
         text-align: center;
     }
 
@@ -779,6 +864,7 @@ header{
     text-transform: uppercase;
     text-align: center;
     font-size: 1em;
+    cursor: pointer;
 
       @include breakpoint($tablet){
         font-size: 0.9em;
@@ -797,6 +883,7 @@ header{
     display: none;
 
     @include breakpoint($tablet){
+        cursor: pointer;
 
         @include clearfix;
 
@@ -811,10 +898,11 @@ header{
             display: block;
             width: 175px;
             font-size: 0.8em;
-            padding: 3%;
+            padding: 7%;
             color: #ffffff;
             background: $maroon;
-            text-align: left;       
+            text-align: left;  
+            cursor: pointer;     
 
         }
 
@@ -872,27 +960,29 @@ header{
 
 .beers_img img{
     display: block;
-    width: 37%;
-    float: left;
-    margin-left: 3%;
+    width: 87%;
+    margin: 0 auto;
     -webkit-filter: grayscale(100%); filter: grayscale(100%);
 
     @include breakpoint($desktop){
         width: 100%;
+        float: left;
+        margin-left: 3%;
     
     }
 }
 
 .beer_details{
     display: block;
-    width: 54%;
-    float: left;
+    width: 87%;
+    margin: 0 auto;
     padding-left: 3%;
     padding-right: 3%;
 
     @include breakpoint($desktop){
         width: 29%;
         margin-top: 1.2%;
+        float: left;
     }
 
         h3{
@@ -912,7 +1002,8 @@ header{
             text-transform: none;
 
             @include breakpoint($tablet){
-                font-size: 1.5em;
+                font-size: 1.7em;
+
             }
 
             @include breakpoint($desktop){
@@ -937,6 +1028,10 @@ header{
 }
 
 .beer_article{
+
+    width: 87%;
+    margin: 0 auto;
+
     @include breakpoint($desktop){
         @include clearfix;
         width: 25%;
@@ -946,8 +1041,8 @@ header{
 
 .beer_article article{
     clear: both;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 3%;
     padding-bottom: 0;
     font-size: 0.9em;
@@ -961,6 +1056,8 @@ header{
             padding: 4%;
             margin: 0;
             width: 100%;
+            margin-left: 3%;
+            margin-right: 3%;
          
         }
 }
@@ -1014,13 +1111,13 @@ header{
 
 .find_sword{
     display: block;
-    width: 10%;
+    width: 7%;
     margin: 2% auto;
 
     @include breakpoint($desktop){
-    width: 6%;    
+    width: 5%;    
     position: absolute;
-    bottom: -42%;
+    bottom: -50%;
     left: 2%;
 
     }
@@ -1101,13 +1198,13 @@ header{
 
 .events_sword{
     display: block;
-    width: 10%;
+    width: 7%;
     margin: 2% auto;
 
     @include breakpoint($desktop){
-    width: 6%;    
+    width: 5%;    
     position: absolute;
-    bottom: -46%;
+    bottom: -54%;
     left: 2%;
 
     }
@@ -1212,13 +1309,13 @@ header{
 
 .balanced_brews img{
     display: block;
-    width: 45%;
-    float: left;
-    margin-left: 3%;
+    width: 87%;
+    margin: 0 auto;
     border: solid 4px #000000;
 
     @include breakpoint($desktop){
-        
+
+        float: left;
         width: 35%;
         margin-left: 7%;
         margin-top: 2%;
@@ -1241,15 +1338,17 @@ header{
 
 .yoga_info{
     display: block;
-    width: 44%;
-    float: left;
+    width: 87%;
     padding: 3%;
+    text-align: center;
     
 
 
     @include breakpoint($desktop){
         width: 50%;
         padding: 0;
+        float: left;
+        text-align: left;
     }
 
         h5{
@@ -1313,11 +1412,11 @@ header{
 
 .contact_sword{
     display: block;
-    width: 10%;
+    width: 7%;
     margin: 2% auto;
 
     @include breakpoint($desktop){
-    width: 6%;    
+    width: 5%;    
     position: absolute;
     bottom: -45%;
     left: 2%;
@@ -1516,7 +1615,7 @@ textarea{
             display: block;
             margin: 0 auto;
             text-align: center;
-            width: 50%;
+            width: 60%;
 
             @include breakpoint($tablet){
                 width: 30%;
@@ -1533,7 +1632,7 @@ textarea{
                 text-transform: uppercase;
                 display: block;
                 padding: 0.2em 0.5em;
-                border: 2px solid $maroon;
+                border: 1px solid $maroon;
                 font-size: 1.1em;
 
                 
