@@ -52,6 +52,8 @@ p{
 	width: 75%;
 }
 
+.
+
 .conquest_screenshots, .responsive_templates{
 	width: 96%;
 }
@@ -60,23 +62,26 @@ p{
 .conquest_screenshots img{
 	display: inline-block;
 	width: 100%;
-	border: 2px solid gray;
+	border: 2px solid #cccccc;
 	/*margin: 3%;*/
 }
 
 .responsive_templates img{
 	display: inline-block;
 	width: 100%;
-	/*margin: 3%;*/
+	border: 2px solid #cccccc;
+	margin-right: 2%;
+	margin-bottom: 3%;
 
 }
 
 .conquest_wireframes img, .conquest_sketches img{
 	display: inline-block;
 	width: 94%;
-	border: 2px solid gray;
+	border: 2px solid #cccccc;
 	vertical-align: top;
 	margin-bottom: 3%;
+	margin-right: 2%;
 
 
 }
@@ -116,9 +121,10 @@ p{
 	}
 
 	.responsive_templates img, .conquest_screenshots img{
-		width: 40%;
+		width: 46.5%;
 		margin-left: 0;
 		display: inline-block;
+		vertical-align: top;
 	}
 
 	.conquest_wireframes{
@@ -127,7 +133,7 @@ p{
 	}
 
 	.conquest_wireframes img, .conquest_sketches img{
-		width: 26%;
+		width: 30%;
 		margin-bottom: 3%;
 	}
 

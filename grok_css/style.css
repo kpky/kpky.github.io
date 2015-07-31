@@ -50,6 +50,7 @@ header, footer{
 .grok_templates img{
 	width: 94%;
 	margin-left: 3%;
+	
 
 }
 
@@ -86,14 +87,14 @@ header, footer{
 .grok_screenshots img{
 	display: inline-block;
 	width: 94%;
-	border: 2px solid gray;
+	border: 2px solid #cccccc;
 	margin: 3%;
 }
 
 .grok_screenshots_m img{
 	display: inline-block;
 	width: 54%;
-	border: 2px solid gray;
+	border: 2px solid #cccccc;
 	margin: 3%;
 
 }
@@ -105,6 +106,7 @@ header, footer{
 .grok_sketches img{
 	width: 94%;
 	margin: 3%;
+	border: 2px solid #cccccc;
 
 }
 
@@ -112,7 +114,7 @@ header, footer{
 	width: 94%;
 	margin: 3%;
 	vertical-align: top;
-	border: 2px solid gray;
+	border: 2px solid #cccccc;
 }
 
 .grok_codesample img{
@@ -120,7 +122,7 @@ header, footer{
   	width: 94%;
   	margin: 0 auto;
   	margin-bottom: 3%;
-  	border: 2px solid gray;
+  	border: 2px solid #cccccc;
 }
 
 .grok_live h2{
@@ -246,7 +248,7 @@ header, footer{
 	.grok_sketches img{
 	width: 26%;
 	margin: 3%;
-	border: 2px solid gray;
+	border: 2px solid #cccccc;
 
 	}
 
