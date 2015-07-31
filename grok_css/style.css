@@ -48,7 +48,7 @@ header, footer{
 }
 
 .grok_templates img{
-	width: 29%;
+	width: 94%;
 	margin-left: 3%;
 
 }
@@ -98,13 +98,6 @@ header, footer{
 
 }
 
-
-.grok_responsive_templates img{
-	display: inline-block;
-	width: 94%;
-	margin: 3%;
-}
-
 .grok_sketches{
 	margin-bottom: 8%;
 }
@@ -120,6 +113,18 @@ header, footer{
 	margin: 3%;
 	vertical-align: top;
 	border: 2px solid gray;
+}
+
+.grok_codesample img{
+	display: block;
+  	width: 94%;
+  	margin: 0 auto;
+  	margin-bottom: 3%;
+  	border: 2px solid gray;
+}
+
+.grok_live h2{
+	margin-left: 3%;
 }
 
 @media screen and (min-width: 680px){
@@ -138,6 +143,20 @@ header, footer{
 	width: 43%;
 	margin: 3%;
 	vertical-align: top;
+	}
+
+	.grok_templates img{
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 2%;
+
+
+}
+
+	.grok_codesample img{
+		width: 75%;
+
 	}
 	
 }
@@ -225,8 +244,9 @@ header, footer{
 	}
 
 	.grok_sketches img{
-	width: 27%;
+	width: 26%;
 	margin: 3%;
+	border: 2px solid gray;
 
 	}
 
@@ -249,6 +269,28 @@ header, footer{
 		margin: 0;
 	}
 
+	.grok_wireframes_container p, .grok_sketches_container p{
+
+		margin: 3%;
+
+	}
+
+	.grok_templates img{
+	display: inline-block;
+	width: 29%;
+	margin-left: 3%;
+
+	}
+
+	.grok_codesample img{
+		display: inline-block;
+		width: 43%;
+		margin: 3%;
+	}
+
+	.grok_codesample p{
+		margin: 3%;
+	}
 	
 
 }

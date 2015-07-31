@@ -93,6 +93,7 @@ p{
 	h1{
 		text-align: left;
 		font-size: 3em;
+		margin-top: 0;
 	}
 
 	header h1, header h3{
@@ -131,17 +132,28 @@ p{
 	}
 
 	.conquest_project_description, .conquest_project_scope, .conquest_discovery_pt1, .conquest_discovery_pt2{
-		width: 45%;
+		width: 43%;
 		float: left;
 		margin-right: 3%;
 		margin-bottom: 8%;
 		vertical-align: top;
+		padding: 2%;
 
 	}
 
-	.conquest_project_scope{
-		margin-left: 3%;
+	.conquest_project_description, .conquest_project_scope{
+		background-color: #cccccc;
+		height: 320px;
+		margin-bottom: 3%;
 	}
+
+	.conquest_discovery_pt1, .conquest_discovery_pt2{
+
+		background-color: #cccccc;
+		height: 540px;
+
+	}
+
 }
 
 
