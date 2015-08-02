@@ -2,6 +2,11 @@ body{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+header{
+	background: #cccccc;
+	padding: 2%;
+	}
+
 ul{
 	padding-left: 0;
 	list-style: none;
@@ -25,19 +30,21 @@ a{
 h1{
 	color: black;
 	margin: 3%;
-	text-align: left;
+	text-align: center;
 
 }	
 
 .navigation{
-	text-align: left;
+	text-align: center;
 	margin: 3%;
 }
 
 .contact_info{
-	margin: 3%;
+	display: block;
+	width: 75%;
+	margin: 3% auto;
 	padding-top: 6%;
-	text-align: left;
+	text-align: center;
 }
 
 .contact_info img{
@@ -46,9 +53,31 @@ h1{
 }
 
 .contact_info li{
-	width: 100%;
 	margin-bottom: 3%;
 }
+
+.email{
+	background: #cccccc;
+	height: 50px;
+	width: 75%;
+	padding: 2%;
+	margin: 2%;
+
+	}
+
+.contact_info a{
+	display: inline-block;
+	width: 75%;
+	background-color: #cccccc;
+	height: 50px;
+	vertical-align: top;
+	padding: 2%;
+	margin: 2%;
+	}
+
+	.contact_info img{
+		width: 8%;
+	}
 
 @media screen and (min-width: 680px){
 	.contact_info img{
@@ -59,13 +88,13 @@ h1{
 @media screen and (min-width: 960px){
 
 	h1{
-		text-align: left;
+		text-align: center;
 		font-size: 3em;
 
 	}
 
 	.navigation{
-		text-align: left;
+		text-align: center;
 	}
 
 	.contact_info{
@@ -75,7 +104,35 @@ h1{
 	.contact_info img{
 	width: 3%;
 
-}
+	}
+
+	.contact_info ul{
+		width: 75%;
+		margin: 0 auto;
+	} 
+
+	.email{
+		background: #cccccc;
+		height: 50px;
+		width: 40%;
+		padding: 2%;
+		margin: 2%;
+	
+	}
+
+	.contact_info a{
+	display: inline-block;
+	width: 40%;
+	background-color: #cccccc;
+	height: 50px;
+	vertical-align: top;
+	padding: 2%;
+	margin: 2%;
+	}	
+
+	.contact_info img{
+		width: 10%;
+	}
 
 
 }

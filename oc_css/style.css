@@ -2,10 +2,16 @@ body{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+header{
+	background: #cccccc;
+	padding: 2%;
+	}
+
+
 ul{
 	padding-left: 0;
 	list-style: none;
-	margin-left: 3%;
+	
 }
 
 
@@ -17,7 +23,7 @@ li{
 
 
 header h1{
-	margin: 3%;
+	text-align: center;
 
 }
 
@@ -28,7 +34,7 @@ a{
 	margin: 3%;
 }
 
-.grok_app_screenshots img{
+.oc_app_screenshots img{
 
 	display: inline-block;
 	width: 42%;
@@ -37,24 +43,36 @@ a{
 
 }
 
+.oc_app_screenshots h2, .oc_app_screenshots p{
+	margin: 3%;
+}
+
+.navigation{
+	text-align: center;
+}
+
 .bottom_navigation{
-	margin-left: 3%;
+	text-align: center;
 }
 
 @media screen and (min-width: 680px){
 
-	.grok_app_screenshots img{
+	.oc_app_screenshots img{
 		width: 25%
 	}
 }
 
 @media screen and (min-width: 960px){
 
-	.grok_app_screenshots img{
+	.oc_app_screenshots img{
 		width: 18%;
 	}
 
 	h1{
 		font-size: 3em;
+	}
+
+	li{
+		font-size: 1.2em;
 	}
 }

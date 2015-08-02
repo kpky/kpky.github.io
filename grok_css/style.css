@@ -2,6 +2,11 @@ body{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+header{
+	background: #cccccc;
+	padding: 2%;
+	}
+
 ul{
 	padding-left: 0;
 	list-style: none;
@@ -18,10 +23,14 @@ a{
 	color: gray;
 }
 
-h1{
+header h1{
 	color: black;
 	margin: 3%;
-	text-align: left;
+	text-align: center;
+}
+
+.grok_work h1{
+	text-align: center;
 }
 
 h3{
@@ -50,19 +59,24 @@ header, footer{
 .grok_templates img{
 	width: 94%;
 	margin-left: 3%;
-	
 
+
+}
+
+.grok_templates h2{
+	margin-left: 3%;
+	text-align: center;
 }
 
 .navigation{
 	margin: 3%;
-	text-align: left;
-	margin-bottom: 8%;
+	text-align: center;
+	
 }
 
 .bottom_navigation{
 	margin: 3%;
-	text-align: left;
+	text-align: center;
 
 }
 
@@ -126,7 +140,8 @@ header, footer{
 }
 
 .grok_live h2{
-	margin-left: 3%;
+	padding-top: 2%;
+	text-align: center;
 }
 
 @media screen and (min-width: 680px){
@@ -175,7 +190,7 @@ header, footer{
 	}
 	
 	h1{
-		text-align: left;
+		text-align: center;
 		font-size: 3em;
 
 	}
@@ -185,21 +200,26 @@ header, footer{
 	}
 
 	header, footer{
-		width: 100%;
+		width: 96%;
 	}
 
 	.navigation{
-		text-align: left;
+		text-align: center;
 
-	}
-
-	.bottom_navigation{
-		text-align: left;
 	}
 
 	.grok_work{
 		width: 100%;
 	}
+
+	.grok_work h1{
+		margin-left: 3%;
+	}
+
+	.grok_templates h2{
+	margin-left: 3%;
+	text-align: left;
+}
 
 	.project_description{
 		width: 43%;

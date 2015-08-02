@@ -1,7 +1,12 @@
 body{
 	font-family: 'Josefin Sans', sans-serif;
-	margin: 3%;
+	
 }
+
+header{
+	background: #cccccc;
+	padding: 2%;
+	}
 
 ul{
 	padding-left: 0;
@@ -24,8 +29,8 @@ a{
 h1{
 	color: black;
 	margin: 3%;
-	text-align: left;
-	font-size: 3em;
+	text-align: center;
+	font-size: 2em;
 
 }
 
@@ -35,13 +40,21 @@ p{
 }	
 
 .navigation{
-	text-align: left;
+	text-align: center;
 	margin: 3%;
 }
 
 .about{
+	display: block;
 	width: 75%;
-	margin: 3%;
+	margin: 3% auto;
+}
+
+@media screen and (min-width: 960px){
+	
+	h1{
+		font-size: 3em;
+	}
 }
 
 
