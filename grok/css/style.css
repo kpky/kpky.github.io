@@ -1,6 +1,7 @@
 body {
   background: #ffffff;
-  font-family: "Telex", sans-serif; }
+  font-family: "Telex", sans-serif;
+  margin: 0; }
 
 h3, h4, h5, h6 {
   font-weight: 700;
@@ -89,19 +90,22 @@ p {
 .subpage_site_header {
   width: 100%;
   border-bottom: 7px solid #000000;
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+  margin-top: 40px; }
   @media screen and (min-width: 680px) {
     .subpage_site_header {
       height: 140px;
       background-image: url(../img/headerbg.jpg);
       background-repeat: repeat;
       background-size: 24%;
-      position: relative; } }
+      position: relative;
+      margin-top: 50px; } }
   @media screen and (min-width: 960px) {
     .subpage_site_header {
       height: 188px;
       position: relative;
-      border-bottom: 7px solid #000000; }
+      border-bottom: 7px solid #000000;
+      margin-top: 0; }
       .subpage_site_header:after {
         content: "";
         display: table;
@@ -134,31 +138,29 @@ p {
   display: block;
   font-family: 'Telex', 'sans-serif';
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 100%;
+  height: 40px;
   position: fixed;
-  top: 15px;
-  right: 25px;
+  top: 0;
   background: rgba(255, 255, 255, 0.4);
-  border: 3px solid #000000;
+  border: none;
   text-transform: uppercase;
   font-size: 0.2em;
-  transform: rotate(45deg);
-  padding: 0;
+  margin: 0;
   z-index: 1000;
   text-align: center; }
   @media screen and (min-width: 680px) {
     .fixed_header_menu {
-      width: 50px;
       height: 50px;
-      top: 30px;
-      right: 10%;
-      border: 5px solid #000000; } }
+      border-bottom: 7px solid #000000; } }
   @media screen and (min-width: 960px) {
     .fixed_header_menu {
+      transform: rotate(45deg);
+      top: 40px;
+      right: 45px;
       border: 5px solid #000000;
-      width: 50px;
-      height: 50px; } }
+      width: 55px;
+      height: 55px; } }
 
 .s {
   background: #ffffff;
@@ -175,11 +177,10 @@ p {
   background: #FBFA81; }
 
 .fixed_header_menu h5 {
-  transform: rotate(-45deg);
   font-size: 0.3em; }
-  @media screen and (min-width: 680px) {
+  @media screen and (min-width: 960px) {
     .fixed_header_menu h5 {
-      padding-left: 4px; } }
+      transform: rotate(-45deg); } }
 
 .fixed_header_menu a {
   text-align: center;

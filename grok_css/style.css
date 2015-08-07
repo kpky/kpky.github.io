@@ -35,7 +35,7 @@ header h1{
 
 h3{
 	color: black;
-	margin: 3%;
+	margin-left: 0;
 	text-align: left;
 
 }
@@ -45,7 +45,8 @@ p{
 	margin: 3%;
 }
 
-header, footer{
+footer{
+	display: block;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -190,7 +191,7 @@ header, footer{
 	}
 	
 	h1{
-		text-align: center;
+		/*text-align: center;*/
 		font-size: 3em;
 
 	}
@@ -214,6 +215,7 @@ header, footer{
 
 	.grok_work h1{
 		margin-left: 3%;
+		text-align: left;
 	}
 
 	.grok_templates h2{
@@ -235,6 +237,14 @@ header, footer{
 		vertical-align: top;
 		margin: 3%;
 
+	}
+
+	.scope h1{
+		margin-left: 0;
+	}
+
+	.scope ul{
+		margin: 0;
 	}
 
 	.grok_discovery_pt1{
@@ -283,13 +293,10 @@ header, footer{
 	}
 
 	.grok_discovery_pt1 h1, .grok_discovery_pt1 h3{
-		margin: 0;
+		margin-left: 0;
 
 	}
 
-	.grok_discovery_pt2 h1, .grok_discovery_pt2 h3{
-		margin: 0;
-	}
 
 	.grok_wireframes_container p, .grok_sketches_container p{
 
