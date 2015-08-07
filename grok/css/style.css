@@ -87,6 +87,10 @@ p {
   width: 85%;
   margin: 0 auto; }
 
+.hr {
+  display: block;
+  margin-top: 0; }
+
 .subpage_site_header {
   width: 100%;
   border-bottom: 7px solid #000000;

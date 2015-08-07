@@ -152,6 +152,10 @@ p{
 
 }
 
+.hr{	display: block;
+		margin-top: 0;
+	}
+
 .subpage_site_header{
 	width: 100%;
 	border-bottom: 7px solid $black;
@@ -181,6 +185,8 @@ p{
 		@include clearfix;
 
 	}
+
+
 
 	.logo a{
 		display: block;
