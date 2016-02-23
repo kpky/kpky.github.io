@@ -3,24 +3,30 @@ body{
 }
 
 header{
+	text-align: center;
 	background: #cccccc;
 	padding: 2%;
+
 	}
 
 ul{
 	padding-left: 0;
 	list-style: none;
-	text-align: left;
 }
 
 li{
 	display: inline-block;
 	margin-right: 3%;
+	text-transform: uppercase;
+	font-size: 1em;
+
+
 }
 
 a{
+	display: block;
 	text-decoration: none;
-	color: gray;
+	color: black;
 }
 
 header h1{
@@ -59,7 +65,9 @@ footer{
 
 .grok_templates img{
 	width: 94%;
-	margin-left: 3%;
+	border: 1px solid #cccccc;
+	margin-top: 2%;
+	vertical-align: top;
 
 
 }
@@ -75,9 +83,14 @@ footer{
 	
 }
 
+.navigation a{
+	color: white;
+}
+
 .bottom_navigation{
 	margin: 3%;
 	text-align: center;
+	color: black;
 
 }
 
@@ -261,6 +274,13 @@ footer{
 		margin: 3%;
 	}
 
+	.grok_discovery_pt3{
+		width: 43%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 3%;
+	}
+
 	.grok_responsive_templates{
 		width: 50%;
 	} 
@@ -306,8 +326,8 @@ footer{
 
 	.grok_templates img{
 	display: inline-block;
-	width: 29%;
-	margin-left: 3%;
+	width: 26%;
+	margin: 3%;
 
 	}
 

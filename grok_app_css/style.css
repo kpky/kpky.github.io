@@ -1,10 +1,12 @@
 body{
 	font-family: 'Josefin Sans', sans-serif;
+
 }
 
 header{
 	background: #cccccc;
 	padding: 2%;
+	text-align: center;
 	}
 
 
@@ -17,26 +19,34 @@ ul{
 li{
 	display: inline-block;
 	margin-right: 3%;
+	text-transform: uppercase;
+
 
 }	
 
+header li{
+	font-size: 1em;
+}
+
 h1{
-	margin: 2%;
+	margin: 3%;
 	text-align: center;
+	color: black;
 
 }
 
 a{
 	text-decoration: none;
-	color: gray;
-	margin: 2%;
+	color: black;
 }
+
+
 
 
 .grok_app_screenshots img, .grok_app_wireframes img{
 
 	display: inline-block;
-	width: 44%;
+	width: 94%;
 	margin: 2%;
 	border: 2px solid gray;
 	vertical-align: top;
@@ -45,6 +55,11 @@ a{
 
 .navigation{
 	text-align: center;
+	margin: 3%;
+}
+
+.navigation a{
+	color: white;
 }
 
 .bottom_navigation{
@@ -55,9 +70,35 @@ a{
 	padding-bottom: 10%;
 }
 
-.work{
+	.col_1{
+	width: 94%;
+	display: block;
+	margin: 4%;
+}
+
+	.col_2{
+	width: 94%;
+	display: block;
+	margin: 4%
+}
+
+	.work{
 	width: 80%;
 	margin: 0 auto;
+}
+
+@media screen and (min-width: 720px){
+
+.grok_app_screenshots img{
+
+	display: inline-block;
+	width: 44%;
+	margin: 2%;
+	border: 2px solid gray;
+	vertical-align: top;
+
+}
+
 }
 
 
@@ -71,6 +112,22 @@ a{
 		
 		font-size: 3em;
 	}
+
+	.col_1{
+	width: 44%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 2%;
+}
+
+	.col_2{
+	width: 44%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 2%
+}
+
+
 
 	.grok_app_screenshots img, .grok_app_wireframes img{
 

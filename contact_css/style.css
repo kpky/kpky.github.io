@@ -3,9 +3,11 @@ body{
 }
 
 header{
+	text-align: center;
 	background: #cccccc;
 	padding: 2%;
-	}
+
+}
 
 ul{
 	padding-left: 0;
@@ -13,16 +15,17 @@ ul{
 }
 
 li{
+
 	display: inline-block;
 	margin-right: 3%;
-	color: gray;
-	font-size: 1.2em;
+	text-transform: uppercase;
+	font-size: 1em;
+
 }
 
 a{
 
 	text-decoration: none;
-	color: gray;
 	display: block;
 	
 }
@@ -37,6 +40,10 @@ h1{
 .navigation{
 	text-align: center;
 	margin: 3%;
+}
+
+.navigation a{
+	color: white;
 }
 
 .contact_info{
@@ -54,10 +61,11 @@ h1{
 
 .contact_info li{
 	margin-bottom: 3%;
+	color: white;
 }
 
 .email{
-	background: #cccccc;
+	background: black;
 	height: 50px;
 	width: 75%;
 	padding: 2%;
@@ -112,7 +120,7 @@ h1{
 	} 
 
 	.email{
-		background: #cccccc;
+		background: black;
 		height: 50px;
 		width: 40%;
 		padding: 2%;
@@ -123,7 +131,7 @@ h1{
 	.contact_info a{
 	display: inline-block;
 	width: 40%;
-	background-color: #cccccc;
+	background-color: black;
 	height: 50px;
 	vertical-align: top;
 	padding: 2%;

@@ -3,35 +3,38 @@ body{
 }
 
 header{
+	text-align: center;
 	background: #cccccc;
 	padding: 2%;
-	}
 
+	}
 
 ul{
 	padding-left: 0;
 	list-style: none;
-	
 }
-
 
 li{
 	display: inline-block;
 	margin-right: 3%;
+	text-transform: uppercase;
+	font-size: 1em;
 
-}
-
-
-header h1{
-	text-align: center;
 
 }
 
 
 a{
+	display: block;
 	text-decoration: none;
 	color: gray;
+}
+
+h1{
+	color: black;
 	margin: 3%;
+	text-align: center;
+
 }
 
 .oc_app_screenshots img{
@@ -41,6 +44,11 @@ a{
 	margin: 3%;
 	border: 2px solid gray;
 
+
+}
+
+.oc_app_screenshots p{
+	font-size: 1.2em;
 }
 
 .oc_app_screenshots h2, .oc_app_screenshots p{
@@ -49,6 +57,12 @@ a{
 
 .navigation{
 	text-align: center;
+	margin: 3%;
+}
+
+.navigation a{
+	color: white;
+
 }
 
 .bottom_navigation{

@@ -3,8 +3,10 @@ body{
 }
 
 header{
+	text-align: center;
 	background: #cccccc;
 	padding: 2%;
+
 	}
 
 ul{
@@ -15,6 +17,9 @@ ul{
 li{
 	display: inline-block;
 	margin-right: 3%;
+	text-transform: uppercase;
+	font-size: 1em;
+
 
 }
 
@@ -28,17 +33,26 @@ h1{
 	color: black;
 	margin: 3%;
 	text-align: center;
+
 }
 
+
 h4{
-	color: gray;
+	color: black;
 	margin: 2%;
 	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.5em;
 }
 
 .navigation{
 	text-align: center;
 	margin: 3%;
+
+}
+
+.navigation a{
+	color: white;
 }
 
 .work{
@@ -48,7 +62,7 @@ h4{
 
 .work img{
 	width: 96%;
-	border: 2px solid #cccccc;
+	border: 1px solid #cccccc;
 	margin: 2%;
 	vertical-align: bottom;
 
@@ -76,13 +90,17 @@ h4{
 
 .work > div a{
 	display: block;
-	color: gray;
+	color: black;
 	text-decoration: none;
 	text-align: left;
 }
 
 .oc_app img{
 	width: 96%;
+}
+
+.ff_tablet h4, .mg_mobile h4{
+	font-weight: normal;
 }
 
 @media screen and ( min-width: 680px ){
@@ -112,7 +130,7 @@ h4{
 
 	.work > div{
 		width: 44%;
-		vertical-align: bottom;
+		vertical-align: top;
 	}	
 
 	li{
