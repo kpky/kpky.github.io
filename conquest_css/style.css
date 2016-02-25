@@ -61,13 +61,20 @@ p{
 	color: white;
 }
 
+.bottom_navigation{
+	margin: 6%;
+	text-align: center;
+	color: black;
+
+}
+
 .conquest_work{
 	margin: 3%;
-	width: 75%;
+	width: 94%;
 }
 
 
-.conquest_screenshots, .responsive_templates{
+.conquest_screenshots{
 	width: 96%;
 }
 
@@ -83,7 +90,6 @@ p{
 	display: inline-block;
 	width: 100%;
 	border: 1px solid #cccccc;
-	margin-right: 2%;
 	margin-bottom: 3%;
 
 }
@@ -163,8 +169,7 @@ p{
 	}
 
 	.conquest_project_description, .conquest_project_scope{
-		/*background-color: #cccccc;
-		height: 320px;*/
+
 		margin-bottom: 3%;
 	}
 
